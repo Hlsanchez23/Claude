@@ -3,16 +3,19 @@
 //
 //   node tools/check.mjs
 //
-// Runs Figueroa-Windows-Template.jsx in an ES3 sandbox against the strict mock
+// Runs the template script in an ES3 sandbox against the strict mock
 // Illustrator (tools/illustrator-mock.mjs) and checks the drawing it makes.
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { createRequire } from 'node:module';
-import { readMeasurements, dataBlock, replaceDataBlock, runTemplate, plain } from './template-runner.mjs';
+import { readMeasurements, applyFillIns, dataBlock, replaceDataBlock, runTemplate, plain, MULLION_MARK } from './template-runner.mjs';
 import { walk, itemBounds, offCanvas } from './illustrator-mock.mjs';
-import { JSX, SCHEDULE, DEFAULT_CSV, svgPath, render } from './build.mjs';
+import { JSX, SCHEDULE, FILL_INS, findSpreadsheet, svgPath, render } from './build.mjs';
 
 const source = fs.readFileSync(JSX, 'utf8');
+const TIMES = String.fromCharCode(0xd7);
+const LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+const pad2 = (n) => String(n).padStart(2, '0');
 let failures = 0;
 function check(name, fn) {
   try {
@@ -32,7 +35,7 @@ function withSetting(src, key, value) {
   return src.replace(re, `$1${value}`);
 }
 
-// Rectangles of one layer, keyed by name, relative to artboard 1 (points, y down)
+// Rectangles of one layer, relative to artboard 1 (points, y down)
 function rectsOf(doc, layerName) {
   const layer = doc.layers.find((l) => l.name === layerName);
   assert.ok(layer, `layer ${layerName} missing`);
@@ -72,33 +75,50 @@ check('script parses as ES3 (the JavaScript version ExtendScript runs)', () => {
   assert.ok(!/,\s*[\]}]/.test(code), 'trailing comma in an array or object literal');
 });
 
-check('DATA block matches the spreadsheet', () => {
-  const measured = readMeasurements(fs.readFileSync(DEFAULT_CSV, 'utf8'));
+const measured = readMeasurements(fs.readFileSync(findSpreadsheet(), 'utf8'));
+
+check('DATA block matches the spreadsheet, with fill-ins flagged in NOTES', () => {
+  const { wall, notes } = applyFillIns(measured, FILL_INS);
   const { api } = runTemplate(source);
-  assert.deepEqual(plain(api.ROWS), measured.rows);
-  assert.equal(api.SILL_MULLION, measured.sill);
-  const expected = replaceDataBlock(source, dataBlock({ project: api.PROJECT, source: api.SOURCE, sill: measured.sill, rows: measured.rows }));
+  assert.deepEqual(plain(api.WALL), wall);
+  assert.deepEqual(plain(api.NOTES), notes);
+  const expected = replaceDataBlock(source, dataBlock({ project: api.PROJECT, revision: api.REVISION, source: api.SOURCE, wall, notes }));
   assert.equal(source, expected, 'run node tools/build.mjs');
+});
+
+check('a blank size in the spreadsheet stops the build unless it is filled in (and flagged)', () => {
+  assert.deepEqual(measured.blanks.map((b) => b.id), ['G31']);
+  assert.throws(() => applyFillIns(measured, {}), /Blank panel sizes in the spreadsheet: G31/);
+  const rowG = measured.wall.filter((e) => e !== MULLION_MARK)[6][1];
+  assert.equal(rowG.length, 35, 'the columns after the blank keep their places');
+  assert.equal(rowG[30], null);
+  assert.equal(rowG[31], 56.75);
 });
 
 // ---- the default build ----------------------------------------------------
 
 const out = render(source);
-const { doc, state, layout: L, settings: S } = out;
+const { doc, state, layout: L, settings: S, api } = out;
 const K = 72 / S.scale;
+const WALL = plain(api.WALL);
+const ROWS = plain(api.ROWS);
+const FLAGGED = ['B28', 'E28', 'G31'];
 
 check('builds without errors and reports once', () => {
   assert.equal(state.documents.length, 1);
   assert.equal(state.alerts.length, 1);
   assert.match(state.alerts[0], /^Window graphics template ready/);
   assert.match(state.alerts[0], /525 panels in 15 rows, 526 artboards/);
+  FLAGGED.forEach((id) => assert.match(state.alerts[0], new RegExp(`Check ${id}: `)));
 });
 
-check('document: CMYK, inches, 1:10 size, 0.5 in bleed (0.05 in at scale)', () => {
+check('document: CMYK, inches, 1:10 size, 0.5 in bleed (0.05 in at scale), v2 title', () => {
   assert.equal(doc.colorMode, 'DocumentColorSpace.CMYK');
   assert.equal(doc.units, 'RulerUnits.Inches');
+  assert.match(doc.title, / v2 1-10$/);
   close(doc.width, L.width * K, 'width');
   close(doc.height, L.height * K, 'height');
+  close(L.height, 646 + 8 * 2.25, 'wall height = glass + 8 horizontal mullions');
   doc.bleed.forEach((b) => close(b, S.bleed * K, 'bleed'));
 });
 
@@ -121,20 +141,26 @@ check('layers: order, locking, printing', () => {
 
 check('swatches: global process colors for the template', () => {
   assert.deepEqual(doc.spots.map((s) => s.name),
-    ['Template - Mullion', 'Template - Trim', 'Template - Safe Area', 'Template - Text', 'Template - Bleed']);
+    ['Template - Mullion', 'Template - Trim', 'Template - Safe Area', 'Template - Text', 'Template - Bleed', 'Template - Check']);
   doc.spots.forEach((s) => assert.equal(s.colorType, 'ColorModel.PROCESS'));
 });
 
 const trim = rectsOf(doc, 'TRIM');
 const byId = new Map(trim.map((r) => [r.name, r]));
-const { api } = runTemplate(source);
-const ROWS = plain(api.ROWS);
-const LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+const rowBox = (r) => {
+  const cells = trim.filter((p) => p.name[0] === LETTERS[r]);
+  return {
+    x0: Math.min(...cells.map((p) => p.x)),
+    x1: Math.max(...cells.map((p) => p.x + p.w)),
+    y0: cells[0].y,
+    y1: cells[0].y + cells[0].h,
+  };
+};
 
 check('TRIM: one outline per panel at the exact spreadsheet size', () => {
   assert.equal(trim.length, 525);
   ROWS.forEach(([h, widths], r) => widths.forEach((w, c) => {
-    const id = LETTERS[r] + String(c + 1).padStart(2, '0');
+    const id = LETTERS[r] + pad2(c + 1);
     const p = byId.get(id);
     assert.ok(p, `${id} missing`);
     close(p.w, w * K, `${id} width`);
@@ -142,34 +168,44 @@ check('TRIM: one outline per panel at the exact spreadsheet size', () => {
     assert.equal(p.item.filled, false, `${id} has a fill`);
     assert.equal(p.item.stroked, true, `${id} has no stroke`);
   }));
+  close(byId.get('G31').w, 56.75 * K, 'G31 uses the fill-in width');
 });
 
 check('panels in a row: same top, 0.5 in vertical mullion between neighbours', () => {
   ROWS.forEach(([, widths], r) => {
     for (let c = 1; c < widths.length; c++) {
-      const a = byId.get(LETTERS[r] + String(c).padStart(2, '0'));
-      const b = byId.get(LETTERS[r] + String(c + 1).padStart(2, '0'));
+      const a = byId.get(LETTERS[r] + pad2(c));
+      const b = byId.get(LETTERS[r] + pad2(c + 1));
       close(b.y, a.y, `${LETTERS[r]} row top`);
       close(b.x - (a.x + a.w), S.verticalMullion * K, `gap ${LETTERS[r]}${c}/${c + 1}`);
     }
   });
 });
 
-check('rows: 2.25 in horizontal mullion between rows, first row on top', () => {
-  for (let r = 1; r < ROWS.length; r++) {
-    const above = byId.get(`${LETTERS[r - 1]}01`);
-    const below = byId.get(`${LETTERS[r]}01`);
-    close(below.y - (above.y + above.h), S.horizontalMullion * K, `gap ${LETTERS[r - 1]}/${LETTERS[r]}`);
+check('rows: a 2.25 in horizontal mullion only where the spreadsheet has one; other rows butt together', () => {
+  let prev = null;
+  let between = 0;
+  let row = 0;
+  for (const e of WALL) {
+    if (e === MULLION_MARK) {
+      between++;
+      continue;
+    }
+    const cur = byId.get(`${LETTERS[row]}01`);
+    if (prev) close(cur.y - (prev.y + prev.h), between * S.horizontalMullion * K, `gap ${LETTERS[row - 1]}/${LETTERS[row]}`);
+    prev = cur;
+    between = 0;
+    row++;
   }
   close(byId.get('A01').y, 0, 'row A at the top');
+  assert.deepEqual(plain(api.buttedRows(api.WALL)), ['D-E', 'F-G-H', 'I-J-K', 'L-M-N']);
 });
 
-check('MULLIONS: vertical bars fill the gaps exactly, horizontal bars span the rows they separate', () => {
+check('MULLIONS: vertical bars fill the gaps exactly; 8 horizontal bars span the rows they separate', () => {
   const bars = rectsOf(doc, 'MULLIONS');
   const vertical = bars.filter((b) => b.name.startsWith('Mullion '));
   const horizontal = bars.filter((b) => b.name.startsWith('Horizontal'));
   assert.equal(vertical.length, 15 * 34);
-  assert.equal(horizontal.length, 15);
   for (const v of vertical) {
     const [, a, b] = v.name.match(/^Mullion (\w+)\/(\w+)$/);
     const left = byId.get(a);
@@ -179,17 +215,27 @@ check('MULLIONS: vertical bars fill the gaps exactly, horizontal bars span the r
     close(v.y, left.y, `${v.name} top`);
     close(v.h, left.h, `${v.name} height`);
   }
-  const rowBox = (r) => {
-    const cells = trim.filter((p) => p.name[0] === LETTERS[r]);
-    const x0 = Math.min(...cells.map((p) => p.x));
-    return { x0, x1: Math.max(...cells.map((p) => p.x + p.w)), y0: cells[0].y, y1: cells[0].y + cells[0].h };
-  };
-  horizontal.forEach((m, i) => {
-    const above = rowBox(i);
+  // rows above and below each MULLION in the spreadsheet
+  const neighbours = [];
+  let row = 0;
+  WALL.forEach((e, i) => {
+    if (e !== MULLION_MARK) {
+      row++;
+      return;
+    }
+    const above = i > 0 && WALL[i - 1] !== MULLION_MARK ? row - 1 : null;
+    const below = i + 1 < WALL.length && WALL[i + 1] !== MULLION_MARK ? row : null;
+    neighbours.push([above, below]);
+  });
+  assert.equal(horizontal.length, 8);
+  assert.equal(horizontal.length, neighbours.length);
+  horizontal.forEach((m, k) => {
+    const [a, b] = neighbours[k];
+    const above = rowBox(a);
     close(m.y, above.y1, `${m.name} top`);
     close(m.h, S.horizontalMullion * K, `${m.name} height`);
-    const below = i + 1 < ROWS.length ? rowBox(i + 1) : above;
-    if (i + 1 < ROWS.length) close(m.y + m.h, below.y0, `${m.name} bottom`);
+    const below = b === null ? above : rowBox(b);
+    if (b !== null) close(m.y + m.h, below.y0, `${m.name} bottom`);
     close(m.x, Math.min(above.x0, below.x0), `${m.name} left`);
     close(m.x + m.w, Math.max(above.x1, below.x1), `${m.name} right`);
     assert.equal(m.item.stroked, false);
@@ -210,16 +256,20 @@ check('SAFE AREA: dashed outline 1 in inside every panel', () => {
   }
 });
 
-check('LABELS: ID and size text inside each panel', () => {
+check('LABELS: ID and size inside each panel; a red CHECK SIZE line on B28, E28 and G31', () => {
   const labels = textsOf(doc, 'LABELS');
   assert.equal(labels.length, 525);
   const [ox, oy] = doc.artboards[0].rect;
+  const checkSpot = doc.spots.find((s) => s.name === 'Template - Check');
   for (const t of labels) {
     const id = t.name.replace(' label', '');
     const p = byId.get(id);
     const [r, c] = [LETTERS.indexOf(id[0]), Number(id.slice(1)) - 1];
     const [h, widths] = ROWS[r];
-    assert.deepEqual(t.paragraphs.map((q) => q.text), [id, `${widths[c]} \u00D7 ${h}`]);
+    const expected = [id, `${widths[c]} ${TIMES} ${h}`];
+    if (FLAGGED.includes(id)) expected.push('CHECK SIZE');
+    assert.deepEqual(t.paragraphs.map((q) => q.text), expected);
+    if (FLAGGED.includes(id)) assert.equal(t.paragraphs[2].fillColor.spot, checkSpot, `${id} CHECK line is not red`);
     assert.ok(t.paragraphs.every((q) => q.justification === 'Justification.CENTER'));
     const [bl, bt, br, bb] = itemBounds(t);
     const box = { x0: bl - ox, x1: br - ox, y0: oy - bt, y1: oy - bb };
@@ -250,17 +300,21 @@ check('everything sits on the Illustrator canvas', () => {
   assert.deepEqual(offCanvas(doc), []);
 });
 
-check('title block flags the suspicious widths B28 and E28', () => {
-  const notes = textsOf(doc, 'INFO').find((t) => t.name === 'Notes');
-  const last = notes.paragraphs.at(-1).text;
-  assert.match(last, /^CHECK BEFORE PRODUCTION/);
-  assert.match(last, /B28 is 57"/);
-  assert.match(last, /E28 is 57"/);
+check('title block: v2 title, butted rows, and the panels to check', () => {
+  const info = textsOf(doc, 'INFO');
+  assert.match(info.find((t) => t.name === 'Title').paragraphs[0].text, /WINDOW GRAPHICS TEMPLATE V2$/);
+  const lines = info.find((t) => t.name === 'Notes').paragraphs.map((q) => q.text);
+  assert.ok(lines.includes('No horizontal mullion between rows D-E, F-G-H, I-J-K, L-M-N: ' +
+    'those panels butt together on the glass, so their seams will show.'));
+  const last = lines.at(-1);
+  assert.match(last, /^CHECK BEFORE PRODUCTION: /);
+  FLAGGED.forEach((id) => assert.match(last, new RegExp(`${id}: `)));
+  assert.match(last, /G31: blank in the spreadsheet/);
 });
 
 check('row offsets are the least-squares fit of the vertical mullions (the pivot mullion stays within 3 in)', () => {
   const pos = ROWS.map((row, r) => row[1].slice(0, -1).map((_, c) => {
-    const p = byId.get(LETTERS[r] + String(c + 1).padStart(2, '0'));
+    const p = byId.get(LETTERS[r] + pad2(c + 1));
     return (p.x + p.w) / K;
   }));
   const cols = pos[0].length;
@@ -296,7 +350,7 @@ check('firstRowIsTop: false puts row A at the bottom', () => {
   const flipped = build(withSetting(source, 'firstRowIsTop', 'false')).doc;
   const t = new Map(rectsOf(flipped, 'TRIM').map((r) => [r.name, r]));
   assert.ok(t.get('A01').y > t.get('O01').y);
-  close(t.get('O01').y, S.horizontalMullion * K, 'sill mullion now on top');
+  close(t.get('O01').y, S.horizontalMullion * K, 'last mullion row now on top');
 });
 
 check('rowAlignment left / center / right', () => {
@@ -342,10 +396,11 @@ check('SVG and panel schedule are up to date', () => {
   assert.equal(fs.readFileSync(SCHEDULE, 'utf8'), out.schedule, 'run node tools/build.mjs');
 });
 
-check('panel schedule: 525 panels, sizes and bleed sizes', () => {
-  const lines = out.schedule.trim().split('\r\n').slice(1).map((l) => l.split(','));
+check('panel schedule: 525 panels, sizes, bleed sizes and checks', () => {
+  const lines = out.schedule.trim().split('\r\n').slice(1);
   assert.equal(lines.length, 525);
-  for (const [id, row, col, w, h, , wb, hb, ab] of lines) {
+  for (const line of lines) {
+    const [id, row, col, w, h, , wb, hb, ab] = line.split(',');
     const p = L.panels.find((q) => q.id === id);
     assert.equal(row, id[0]);
     assert.equal(Number(col), p.col);
@@ -355,6 +410,8 @@ check('panel schedule: 525 panels, sizes and bleed sizes', () => {
     close(Number(hb), p.h + 2 * S.bleed, `${id} height + bleed`, 1e-3);
     assert.equal(Number(ab), L.panels.indexOf(p) + 2);
   }
+  const flagged = lines.filter((l) => !l.endsWith(',')).map((l) => l.split(',')[0]);
+  assert.deepEqual(flagged, ['B28', 'C34', 'D01', 'E28', 'G31', 'J02']);
 });
 
 console.log(failures ? `\n${failures} check(s) failed` : '\nall checks passed');

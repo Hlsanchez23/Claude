@@ -48,71 +48,116 @@ export function parseCsv(text) {
 const PANEL = /^(\d+(?:\.\d+)?)"?\s*(?:[xX\u00D7]\s*)?(\d+(?:\.\d+)?)"?$/;
 const MULLION = /^(\d+(?:\.\d+)?)"?$/;
 
-// The spreadsheet is drawn like the wall: a header row of column numbers, then
-// rows of "W x H" panels (with the 0.5" vertical mullions in between) that
-// alternate with rows of 2.25" horizontal mullions.
+// Marks a horizontal mullion in the wall list (same value as MULLION in the .jsx)
+export const MULLION_MARK = 'mullion';
+const LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+const panelId = (row, col) => LETTERS[row] + String(col).padStart(2, '0');
+
+// The spreadsheet is drawn like the wall, top to bottom: a header row of column
+// numbers, rows of "W x H" panels (with the 0.5" vertical mullions in between)
+// and, wherever there is one, a row of 2.25" horizontal mullions.
+// Returns wall = [[height, [widths]] or MULLION_MARK, ...]. Blank panel cells are
+// listed in blanks (and are null in widths) rather than skipped, so the columns
+// after them keep their places.
 export function readMeasurements(csvText) {
-  const table = parseCsv(csvText)
-    .map((r) => r.map((c) => c.trim()))
-    .filter((r) => r.some((c) => c !== ''));
-  const header = table[0];
-  if (!header.filter((c, j) => j % 2 === 0).every((c, k) => c === String(k + 1))) {
+  const table = parseCsv(csvText).map((r) => r.map((c) => c.trim()));
+  const numbers = table[0].filter((c, j) => j % 2 === 0);
+  if (!numbers.every((c, k) => c === String(k + 1))) {
     throw new Error('Expected the first row to number the columns 1, 2, 3 ... in every other cell.');
   }
-  const rows = [];
+  const columns = numbers.length;
+  const wall = [];
+  const blanks = [];
   const notes = [];
   const verticalMullions = new Set();
   const horizontalMullions = new Set();
-  let lastWasMullion = false;
+  let row = 0;
   table.slice(1).forEach((cells, i) => {
     const line = i + 2;
     const filled = cells.filter((c) => c !== '');
+    if (!filled.length) return;
     if (filled.every((c) => MULLION.test(c))) {
       filled.forEach((c) => horizontalMullions.add(parseFloat(c)));
-      lastWasMullion = true;
+      wall.push(MULLION_MARK);
       return;
     }
-    lastWasMullion = false;
     const widths = [];
     const heights = new Set();
     const missingX = [];
-    cells.forEach((c, j) => {
-      if (j % 2 === 1) {
-        if (c !== '') {
-          if (!MULLION.test(c)) throw new Error(`Line ${line}: expected a mullion size between panels, got "${c}".`);
-          verticalMullions.add(parseFloat(c));
+    for (let col = 1; col <= columns; col++) {
+      const c = cells[(col - 1) * 2] ?? '';
+      const between = cells[(col - 1) * 2 + 1] ?? '';
+      if (between !== '') {
+        if (col === columns || !MULLION.test(between)) {
+          throw new Error(`Line ${line}: expected a mullion size between columns ${col} and ${col + 1}, got "${between}".`);
         }
-        return;
+        verticalMullions.add(parseFloat(between));
       }
-      if (c === '') return;
+      if (c === '') {
+        blanks.push({ id: panelId(row, col), line, row, col });
+        widths.push(null);
+        continue;
+      }
       const m = c.match(PANEL);
-      if (!m) throw new Error(`Line ${line}, column ${j / 2 + 1}: can't read "${c}" as W x H.`);
+      if (!m) throw new Error(`Line ${line}, column ${col}: can't read "${c}" as W x H.`);
       if (!/[xX\u00D7]/.test(c)) missingX.push(c);
       widths.push(Number(m[1]));
       heights.add(Number(m[2]));
-    });
+    }
     if (missingX.length) notes.push(`Line ${line}: ${missingX.length} sizes have no "x" (e.g. ${missingX[0]}) - read as W x H.`);
     if (heights.size !== 1) throw new Error(`Line ${line}: panels in one row must share a height, got ${[...heights].join(', ')}.`);
-    rows.push([[...heights][0], widths]);
+    wall.push([[...heights][0], widths]);
+    row++;
   });
-  return { rows, sill: lastWasMullion, verticalMullions: [...verticalMullions], horizontalMullions: [...horizontalMullions], notes };
+  return { wall, blanks, verticalMullions: [...verticalMullions], horizontalMullions: [...horizontalMullions], notes };
+}
+
+// Fills blank panel cells from fillIns ({ G31: { w, h, note } }). Returns the
+// completed wall and the NOTES that flag each fill-in on the template. Throws
+// if a blank has no fill-in, so a missing size can't slip through.
+export function applyFillIns({ wall, blanks }, fillIns) {
+  const out = wall.map((e) => (e === MULLION_MARK ? e : [e[0], [...e[1]]]));
+  const rows = out.filter((e) => e !== MULLION_MARK);
+  const notes = {};
+  const missing = [];
+  for (const b of blanks) {
+    const f = fillIns[b.id];
+    if (!f) {
+      missing.push(`${b.id} (line ${b.line}, column ${b.col})`);
+      continue;
+    }
+    if (f.h !== rows[b.row][0]) throw new Error(`Fill-in for ${b.id} is ${f.h}" tall but row ${b.id[0]} is ${rows[b.row][0]}".`);
+    rows[b.row][1][b.col - 1] = f.w;
+    notes[b.id] = f.note;
+  }
+  if (missing.length) {
+    throw new Error(`Blank panel sizes in the spreadsheet: ${missing.join(', ')}. Fill them in, or add them to FILL_INS in tools/build.mjs.`);
+  }
+  const unused = Object.keys(fillIns).filter((id) => !blanks.some((b) => b.id === id));
+  return { wall: out, notes, unused };
 }
 
 // ---- the DATA block inside the .jsx --------------------------------------
 
-const LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-
-export function dataBlock({ project, source, sill, rows }) {
+export function dataBlock({ project, revision, source, wall, notes }) {
   const q = (s) => `'${String(s).replace(/\\/g, '\\\\').replace(/'/g, "\\'")}'`;
-  const lines = rows.map(([h, ws], i) => `        [${h}, [${ws.join(', ')}]]${i < rows.length - 1 ? ',' : ' '} // ${LETTERS[i]}`);
+  let row = 0;
+  const entries = wall.map((e, i) => {
+    const comma = i < wall.length - 1 ? ',' : '';
+    if (e === MULLION_MARK) return `        MULLION${comma}`;
+    return `        [${e[0]}, [${e[1].join(', ')}]]${comma || ' '} // ${LETTERS[row++]}`;
+  });
+  const ids = Object.keys(notes);
+  const noteLines = ids.map((id, i) => `        ${id}: ${q(notes[id])}${i < ids.length - 1 ? ',' : ''}`);
   return [
     '    // @@DATA-BEGIN (generated by tools/build.mjs)',
     `    var PROJECT = ${q(project)};`,
+    `    var REVISION = ${q(revision)};`,
     `    var SOURCE = ${q(source)};`,
-    `    var SILL_MULLION = ${sill}; // the spreadsheet ends with a horizontal mullion below the last row`,
-    '    var ROWS = [',
-    ...lines,
+    '    var WALL = [',
+    ...entries,
     '    ];',
+    ...(noteLines.length ? ['    var NOTES = {', ...noteLines, '    };'] : ['    var NOTES = {};']),
     '    // @@DATA-END',
   ].join('\n');
 }
@@ -158,7 +203,7 @@ export function runTemplate(source, { illustratorOptions, es3 = true } = {}) {
     Object.assign(context, mock.globals);
     state = mock.state;
   }
-  vm.runInContext(source, context, { filename: 'Figueroa-Windows-Template.jsx' });
+  vm.runInContext(source, context, { filename: 'template.jsx' });
   return { api: context.WINDOW_TEMPLATE, state };
 }
 

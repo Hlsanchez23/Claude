@@ -1,22 +1,33 @@
-# Crypto.com Arena – Figueroa Entrance · Window Graphics Template
+# Crypto.com Arena – Figueroa Entrance · Window Graphics Template (v2)
 
 Editable Adobe Illustrator template for large-format window graphics, built from
-[`Crypto.com Arena Figueroa Entrance - Windows.csv`](../Crypto.com%20Arena%20Figueroa%20Entrance%20-%20Windows.csv):
-525 glass panels (15 rows × 35 columns), 0.5" vertical mullions, 2.25" horizontal mullions.
+[`Crypto.com Arena Figueroa Entrance - Windows (3).csv`](../Crypto.com%20Arena%20Figueroa%20Entrance%20-%20Windows%20%283%29.csv):
+525 glass panels (15 rows × 35 columns), 0.5" vertical mullions, and 2.25" horizontal
+mullions where the revised spreadsheet has them.
+
+## What changed in v2
+
+- **Horizontal mullions follow the revised spreadsheet.** There are 8 instead of 15: between
+  rows A/B, B/C, C/D, E/F, H/I, K/L and N/O, and below O. Rows **D-E, F-G-H, I-J-K and
+  L-M-N butt together** with no gap, so the wall is now 664" tall (was 679.75").
+- **G31 is blank in the revised spreadsheet.** It's drawn at 56.75" × 70.5", its size in
+  the previous sheet (the same as G32 and G33), and flagged to confirm.
+- Panels to verify get a red **CHECK SIZE** line on their label.
+- The files are named `-v2`. The v1 files are in the git history.
 
 ![Template preview](preview.png)
 
 | File | What it is |
 |---|---|
-| **`Figueroa-Windows-Template.jsx`** | Illustrator script that builds the full layered template. **Use this one.** |
-| `Figueroa-Windows-Template-1to10.svg` | The same drawing as a file Illustrator opens directly (no layers or per-panel artboards) |
-| `Figueroa-Windows-Panel-Schedule.csv` | All 525 panels: ID, size, size + bleed, sq ft, artboard #, position, verification flags |
+| **`Figueroa-Windows-Template-v2.jsx`** | Illustrator script that builds the full layered template. **Use this one.** |
+| `Figueroa-Windows-Template-v2-1to10.svg` | The same drawing as a file Illustrator opens directly (no layers or per-panel artboards) |
+| `Figueroa-Windows-Panel-Schedule-v2.csv` | All 525 panels: ID, size, size + bleed, sq ft, artboard #, position, verification flags |
 | `preview.png`, `preview-detail.png` | Previews |
 | `tools/` | Rebuild from the spreadsheet and verify (Node.js; not needed to use the template) |
 
 ## Build the template in Illustrator
 
-1. **File › Scripts › Other Script…** (Ctrl/Cmd+F12) and choose `Figueroa-Windows-Template.jsx`.
+1. **File › Scripts › Other Script…** (Ctrl/Cmd+F12) and choose `Figueroa-Windows-Template-v2.jsx`.
 2. Give it a minute or two: it draws about 2,300 objects and 526 artboards.
 3. **File › Save As › Adobe Illustrator (.ai).**
 
@@ -26,8 +37,8 @@ elevation only.
 ## What's in the document
 
 - **Scale 1:10.** Everything is 10% of actual size, so output/RIP at **1000%**. The wall is
-  2200.24" × 679.75" actual (183' 4-1/4" × 56' 7-3/4"), which is 220.02" × 67.98" in the
-  file. At full size it would exceed Illustrator's 227" canvas.
+  2200.24" × 664" actual (183' 4-1/4" × 55' 4"), which is 220.02" × 66.4" in the file.
+  At full size it would exceed Illustrator's 227" canvas.
 - **CMYK**, ruler units in inches.
 - **Artboard 1, "Elevation":** the whole wall. Design here.
 - **Artboards 2–526:** one per panel, sitting exactly on its trim line and named by panel ID
@@ -40,10 +51,10 @@ elevation only.
 | Layer (top → bottom) | Contents | State |
 |---|---|---|
 | INFO | Row/column keys, title block, legend, scale bar (below the wall) | locked, non-printing |
-| LABELS | Panel ID + size (W × H, actual inches) centered in every panel | locked, non-printing |
+| LABELS | Panel ID + size (W × H, actual inches) centered in every panel, plus a red CHECK SIZE on panels to verify | locked, non-printing |
 | SAFE AREA | Dashed cyan line 1" inside every panel (keep text and logos inside it) | locked, non-printing |
 | TRIM | Magenta outline of every panel = glass size | locked, non-printing |
-| MULLIONS | Gray bars: 0.5" vertical, 2.25" horizontal | locked, non-printing |
+| MULLIONS | Gray bars: 0.5" vertical between panels, 2.25" horizontal where the spreadsheet has them | locked, non-printing |
 | **ARTWORK** | **Your design** | unlocked, printing |
 
 The template colors are global swatches (`Template - Mullion`, `Template - Trim`, …).
@@ -56,6 +67,8 @@ finish for a client mockup.
   outer edges to the bleed, so every panel crops cleanly.
 - Toggle **MULLIONS** and **LABELS** to check that no faces, text or logos fall behind a
   mullion. The 2.25" horizontal bars are the ones to watch.
+- Rows D-E, F-G-H, I-J-K and L-M-N butt together with no mullion, so those seams show on
+  the glass. Keep faces and small text off them, or plan an overlap at production.
 - Raster images need **1000–1500 ppi at this scale** (100–150 ppi at full size). Before
   output, set **Effect › Document Raster Effects Settings** to at least 1000 ppi.
 
@@ -85,8 +98,11 @@ Other choices, each a one-line setting at the top of the script:
 
 - **Row order:** row A (the first spreadsheet row) is drawn at the top
   (`firstRowIsTop: true`). If the spreadsheet runs bottom-up, set it to `false`.
+- **Horizontal mullions:** drawn only where the spreadsheet has a mullion row. In the
+  script's DATA block, each one is a `MULLION,` line between two rows; add or delete that
+  line to add or remove one.
 - **Bottom mullion:** the spreadsheet ends with a 2.25" mullion row below row O. It's
-  included as a sill, which is why the height is 679.75" rather than 677.5".
+  included as a sill, which is why the height is 664" rather than 661.75".
 - **Edge panels:** columns 1 and 35 change size a lot row to row (39.75"→56.75" and
   16"→55"), so they're probably raked or trapezoidal in reality. Template or field-verify
   them.
@@ -98,13 +114,14 @@ The script also flags these in the title block, the completion message and the s
 
 | Panel | Spreadsheet | Why |
 |---|---|---|
+| **G31** | blank | The cell is empty in `Windows (3).csv`. It was 56.75" × 70.5" in the previous sheet, like G32 and G33, so it's drawn at that size. Confirm it. |
 | **B28** | 57" × 40.5" | Column 28 is 67" in the rows above and below. The block of 57" panels starts one column early in this row. Likely a typo for 67". |
 | **E28** | 57" × 36.5" | Same pattern: column 28 is 66" above and below. With 66", row E's total width fits between its neighbours. |
 | D01 | 45.24" | Probably 45.25" (not a 1/8" increment) |
 | C34 | 58.24" | Probably 58.25" |
 | J02 | 59.755" | Probably 59.75" |
 
-Row H (spreadsheet line 16) writes its sizes without the "x" (`60.375" 36.5"`). They were
+Row H (spreadsheet line 13) writes its sizes without the "x" (`60.375" 36.5"`). They were
 read as W × H.
 
 ## Changing sizes or settings
@@ -114,6 +131,9 @@ read as W × H.
 - **Correct a panel size** in the spreadsheet, then run `node tools/build.mjs`. This
   rewrites the DATA block in the script and regenerates the SVG and schedule. Or edit the
   number directly in the script's DATA block and re-run it in Illustrator.
+- **Blank cells** in the spreadsheet stop the build, rather than shifting the columns after
+  them. Until the sheet is fixed, a stand-in size goes in `FILL_INS` in `tools/build.mjs`
+  (G31 is there now), and the template flags it.
 
 ## Using the SVG instead
 
@@ -137,7 +157,9 @@ scripting API. The mock rejects any property or method the script uses that isn'
 the modelled API. The checks cover:
 
 - every panel's size;
-- the 0.5" and 2.25" gaps, and mullions filling them exactly;
+- the 0.5" gaps, 2.25" mullions only where the spreadsheet has them, and the bars filling
+  them exactly;
+- blank spreadsheet cells caught rather than skipped;
 - labels fitting inside their panels;
 - per-panel artboards on the trim lines;
 - layer states;
