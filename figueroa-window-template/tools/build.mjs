@@ -18,22 +18,17 @@ import { documentToSvg } from './svg.mjs';
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 export const DIR = path.resolve(HERE, '..');
 const PROJECT = 'Crypto.com Arena - Figueroa Entrance';
-export const REVISION = 'v2';
+export const REVISION = 'v3';
 const NAME = `Figueroa-Windows-Template-${REVISION}`;
 export const JSX = path.join(DIR, `${NAME}.jsx`);
 export const SCHEDULE = path.join(DIR, `Figueroa-Windows-Panel-Schedule-${REVISION}.csv`);
 export const svgPath = (scale) => path.join(DIR, `${NAME}-1to${scale}.svg`);
 
-// Blank cells in the spreadsheet and what to use until it is corrected. Each
-// one is flagged on the template (title block, panel label, completion
+// Blank cells in the spreadsheet and what to use until it is corrected, e.g.
+//   G31: { w: 56.75, h: 70.5, note: 'blank in the spreadsheet - drawn at 56.75" x 70.5"' }
+// Each one is flagged on the template (title block, panel label, completion
 // message) and in the panel schedule.
-export const FILL_INS = {
-  G31: {
-    w: 56.75,
-    h: 70.5,
-    note: 'blank in the spreadsheet - drawn at 56.75" x 70.5" from the previous version of the sheet',
-  },
-};
+export const FILL_INS = {};
 
 // GitHub uploads can add " (3)" etc. to the name, so look for the pattern.
 export function findSpreadsheet() {

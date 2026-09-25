@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="224.457in" height="89.419in" viewBox="0 0 16160.877 6438.152">
-  <title>Crypto.com Arena - Figueroa Entrance - Window Graphics Template v2 (scale 1:10)</title>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="225.045in" height="88.519in" viewBox="0 0 16203.249 6373.352">
+  <title>Crypto.com Arena - Figueroa Entrance - Window Graphics Template v3 (scale 1:10)</title>
   <desc>Generated from &quot;Crypto.com Arena Figueroa Entrance - Windows (3).csv&quot; by tools/build.mjs. Scale 1:10: 1 unit = 1 pt = 0.1388888888888889 in actual. Groups: INFO, LABELS, SAFE_AREA, TRIM, MULLIONS, BLEED (template guides) and ARTWORK.</desc>
   <g id="ARTWORK">
   </g>
   <g id="MULLIONS">
     <g id="Horizontal_mullions">
-      <rect id="Horizontal_mullion_1" x="159.575" y="658.768" width="15831.9" height="16.2" fill="#4f4c4d"/>
-      <rect id="Horizontal_mullion_2" x="181.625" y="966.568" width="15819.678" height="16.2" fill="#4f4c4d"/>
+      <rect id="Horizontal_mullion_1" x="159.575" y="658.768" width="15884.1" height="16.2" fill="#4f4c4d"/>
+      <rect id="Horizontal_mullion_2" x="166.775" y="966.568" width="15876.9" height="16.2" fill="#4f4c4d"/>
       <rect id="Horizontal_mullion_3" x="193.775" y="1515.568" width="15807.528" height="16.2" fill="#4f4c4d"/>
-      <rect id="Horizontal_mullion_4" x="253.625" y="2302.168" width="15739.2" height="16.2" fill="#4f4c4d"/>
+      <rect id="Horizontal_mullion_4" x="245.975" y="2302.168" width="15748.2" height="16.2" fill="#4f4c4d"/>
       <rect id="Horizontal_mullion_5" x="327.875" y="3140.968" width="15636.6" height="16.2" fill="#4f4c4d"/>
       <rect id="Horizontal_mullion_6" x="372.875" y="3979.768" width="15575.4" height="16.2" fill="#4f4c4d"/>
       <rect id="Horizontal_mullion_7" x="440.825" y="4818.568" width="15492.6" height="16.2" fill="#4f4c4d"/>
@@ -52,40 +52,40 @@
       <rect id="Mullion_A34_A35" x="15872.675" y="122.368" width="3.6" height="536.4" fill="#4f4c4d"/>
     </g>
     <g id="Row_B_vertical_mullions">
-      <rect id="Mullion_B01_B02" x="476.825" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
-      <rect id="Mullion_B02_B03" x="926.825" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
-      <rect id="Mullion_B03_B04" x="1376.825" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
-      <rect id="Mullion_B04_B05" x="1826.825" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
-      <rect id="Mullion_B05_B06" x="2276.825" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
-      <rect id="Mullion_B06_B07" x="2726.825" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
-      <rect id="Mullion_B07_B08" x="3176.825" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
-      <rect id="Mullion_B08_B09" x="3662.825" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
-      <rect id="Mullion_B09_B10" x="4148.825" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
-      <rect id="Mullion_B10_B11" x="4634.825" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
-      <rect id="Mullion_B11_B12" x="5120.825" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
-      <rect id="Mullion_B12_B13" x="5606.825" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
-      <rect id="Mullion_B13_B14" x="6092.825" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
-      <rect id="Mullion_B14_B15" x="6578.825" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
-      <rect id="Mullion_B15_B16" x="7064.825" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
-      <rect id="Mullion_B16_B17" x="7550.825" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
-      <rect id="Mullion_B17_B18" x="8036.825" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
-      <rect id="Mullion_B18_B19" x="8522.825" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
-      <rect id="Mullion_B19_B20" x="9008.825" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
-      <rect id="Mullion_B20_B21" x="9494.825" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
-      <rect id="Mullion_B21_B22" x="9980.825" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
-      <rect id="Mullion_B22_B23" x="10466.825" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
-      <rect id="Mullion_B23_B24" x="10952.825" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
-      <rect id="Mullion_B24_B25" x="11437.925" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
-      <rect id="Mullion_B25_B26" x="11923.925" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
-      <rect id="Mullion_B26_B27" x="12409.925" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
-      <rect id="Mullion_B27_B28" x="12895.925" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
-      <rect id="Mullion_B28_B29" x="13309.925" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
-      <rect id="Mullion_B29_B30" x="13723.925" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
-      <rect id="Mullion_B30_B31" x="14137.925" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
-      <rect id="Mullion_B31_B32" x="14555.525" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
-      <rect id="Mullion_B32_B33" x="14973.125" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
-      <rect id="Mullion_B33_B34" x="15390.725" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
-      <rect id="Mullion_B34_B35" x="15813.725" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
+      <rect id="Mullion_B01_B02" x="461.975" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
+      <rect id="Mullion_B02_B03" x="911.975" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
+      <rect id="Mullion_B03_B04" x="1361.975" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
+      <rect id="Mullion_B04_B05" x="1811.975" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
+      <rect id="Mullion_B05_B06" x="2261.975" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
+      <rect id="Mullion_B06_B07" x="2711.975" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
+      <rect id="Mullion_B07_B08" x="3161.975" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
+      <rect id="Mullion_B08_B09" x="3647.975" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
+      <rect id="Mullion_B09_B10" x="4133.975" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
+      <rect id="Mullion_B10_B11" x="4619.975" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
+      <rect id="Mullion_B11_B12" x="5105.975" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
+      <rect id="Mullion_B12_B13" x="5591.975" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
+      <rect id="Mullion_B13_B14" x="6077.975" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
+      <rect id="Mullion_B14_B15" x="6563.975" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
+      <rect id="Mullion_B15_B16" x="7049.975" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
+      <rect id="Mullion_B16_B17" x="7535.975" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
+      <rect id="Mullion_B17_B18" x="8021.975" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
+      <rect id="Mullion_B18_B19" x="8507.975" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
+      <rect id="Mullion_B19_B20" x="8993.975" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
+      <rect id="Mullion_B20_B21" x="9479.975" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
+      <rect id="Mullion_B21_B22" x="9965.975" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
+      <rect id="Mullion_B22_B23" x="10451.975" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
+      <rect id="Mullion_B23_B24" x="10937.975" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
+      <rect id="Mullion_B24_B25" x="11423.075" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
+      <rect id="Mullion_B25_B26" x="11909.075" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
+      <rect id="Mullion_B26_B27" x="12395.075" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
+      <rect id="Mullion_B27_B28" x="12881.075" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
+      <rect id="Mullion_B28_B29" x="13367.075" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
+      <rect id="Mullion_B29_B30" x="13781.075" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
+      <rect id="Mullion_B30_B31" x="14195.075" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
+      <rect id="Mullion_B31_B32" x="14612.675" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
+      <rect id="Mullion_B32_B33" x="15030.275" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
+      <rect id="Mullion_B33_B34" x="15447.875" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
+      <rect id="Mullion_B34_B35" x="15870.875" y="674.968" width="3.6" height="291.6" fill="#4f4c4d"/>
     </g>
     <g id="Row_C_vertical_mullions">
       <rect id="Mullion_C01_C02" x="505.175" y="982.768" width="3.6" height="532.8" fill="#4f4c4d"/>
@@ -160,40 +160,40 @@
       <rect id="Mullion_D34_D35" x="15785.753" y="1531.768" width="3.6" height="507.6" fill="#4f4c4d"/>
     </g>
     <g id="Row_E_vertical_mullions">
-      <rect id="Mullion_E01_E02" x="594.275" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
-      <rect id="Mullion_E02_E03" x="1044.275" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
-      <rect id="Mullion_E03_E04" x="1487.075" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
-      <rect id="Mullion_E04_E05" x="1929.875" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
-      <rect id="Mullion_E05_E06" x="2372.675" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
-      <rect id="Mullion_E06_E07" x="2815.475" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
-      <rect id="Mullion_E07_E08" x="3258.275" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
-      <rect id="Mullion_E08_E09" x="3735.275" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
-      <rect id="Mullion_E09_E10" x="4214.075" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
-      <rect id="Mullion_E10_E11" x="4692.875" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
-      <rect id="Mullion_E11_E12" x="5171.675" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
-      <rect id="Mullion_E12_E13" x="5650.475" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
-      <rect id="Mullion_E13_E14" x="6129.275" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
-      <rect id="Mullion_E14_E15" x="6608.075" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
-      <rect id="Mullion_E15_E16" x="7086.875" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
-      <rect id="Mullion_E16_E17" x="7569.275" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
-      <rect id="Mullion_E17_E18" x="8044.475" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
-      <rect id="Mullion_E18_E19" x="8519.675" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
-      <rect id="Mullion_E19_E20" x="8994.875" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
-      <rect id="Mullion_E20_E21" x="9470.075" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
-      <rect id="Mullion_E21_E22" x="9945.275" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
-      <rect id="Mullion_E22_E23" x="10420.475" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
-      <rect id="Mullion_E23_E24" x="10895.675" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
-      <rect id="Mullion_E24_E25" x="11370.875" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
-      <rect id="Mullion_E25_E26" x="11849.675" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
-      <rect id="Mullion_E26_E27" x="12328.475" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
-      <rect id="Mullion_E27_E28" x="12807.275" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
-      <rect id="Mullion_E28_E29" x="13221.275" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
-      <rect id="Mullion_E29_E30" x="13635.275" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
-      <rect id="Mullion_E30_E31" x="14049.275" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
-      <rect id="Mullion_E31_E32" x="14466.875" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
-      <rect id="Mullion_E32_E33" x="14884.475" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
-      <rect id="Mullion_E33_E34" x="15302.075" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
-      <rect id="Mullion_E34_E35" x="15716.075" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
+      <rect id="Mullion_E01_E02" x="580.775" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
+      <rect id="Mullion_E02_E03" x="1030.775" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
+      <rect id="Mullion_E03_E04" x="1473.575" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
+      <rect id="Mullion_E04_E05" x="1916.375" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
+      <rect id="Mullion_E05_E06" x="2359.175" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
+      <rect id="Mullion_E06_E07" x="2801.975" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
+      <rect id="Mullion_E07_E08" x="3244.775" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
+      <rect id="Mullion_E08_E09" x="3721.775" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
+      <rect id="Mullion_E09_E10" x="4200.575" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
+      <rect id="Mullion_E10_E11" x="4679.375" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
+      <rect id="Mullion_E11_E12" x="5158.175" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
+      <rect id="Mullion_E12_E13" x="5636.975" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
+      <rect id="Mullion_E13_E14" x="6115.775" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
+      <rect id="Mullion_E14_E15" x="6594.575" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
+      <rect id="Mullion_E15_E16" x="7073.375" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
+      <rect id="Mullion_E16_E17" x="7555.775" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
+      <rect id="Mullion_E17_E18" x="8030.975" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
+      <rect id="Mullion_E18_E19" x="8506.175" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
+      <rect id="Mullion_E19_E20" x="8981.375" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
+      <rect id="Mullion_E20_E21" x="9456.575" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
+      <rect id="Mullion_E21_E22" x="9931.775" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
+      <rect id="Mullion_E22_E23" x="10406.975" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
+      <rect id="Mullion_E23_E24" x="10882.175" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
+      <rect id="Mullion_E24_E25" x="11357.375" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
+      <rect id="Mullion_E25_E26" x="11836.175" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
+      <rect id="Mullion_E26_E27" x="12314.975" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
+      <rect id="Mullion_E27_E28" x="12793.775" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
+      <rect id="Mullion_E28_E29" x="13272.575" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
+      <rect id="Mullion_E29_E30" x="13686.575" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
+      <rect id="Mullion_E30_E31" x="14100.575" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
+      <rect id="Mullion_E31_E32" x="14518.175" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
+      <rect id="Mullion_E32_E33" x="14935.775" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
+      <rect id="Mullion_E33_E34" x="15353.375" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
+      <rect id="Mullion_E34_E35" x="15767.375" y="2039.368" width="3.6" height="262.8" fill="#4f4c4d"/>
     </g>
     <g id="Row_F_vertical_mullions">
       <rect id="Mullion_F01_F02" x="588.425" y="2318.368" width="3.6" height="52.2" fill="#4f4c4d"/>
@@ -595,41 +595,41 @@
       <rect id="A35" x="15876.275" y="122.368" width="115.2" height="536.4" fill="none" stroke="#ec008c" stroke-width="0.5"/>
     </g>
     <g id="Row_B_trim">
-      <rect id="B01" x="181.625" y="674.968" width="295.2" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="B02" x="480.425" y="674.968" width="446.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="B03" x="930.425" y="674.968" width="446.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="B04" x="1380.425" y="674.968" width="446.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="B05" x="1830.425" y="674.968" width="446.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="B06" x="2280.425" y="674.968" width="446.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="B07" x="2730.425" y="674.968" width="446.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="B08" x="3180.425" y="674.968" width="482.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="B09" x="3666.425" y="674.968" width="482.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="B10" x="4152.425" y="674.968" width="482.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="B11" x="4638.425" y="674.968" width="482.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="B12" x="5124.425" y="674.968" width="482.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="B13" x="5610.425" y="674.968" width="482.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="B14" x="6096.425" y="674.968" width="482.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="B15" x="6582.425" y="674.968" width="482.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="B16" x="7068.425" y="674.968" width="482.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="B17" x="7554.425" y="674.968" width="482.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="B18" x="8040.425" y="674.968" width="482.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="B19" x="8526.425" y="674.968" width="482.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="B20" x="9012.425" y="674.968" width="482.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="B21" x="9498.425" y="674.968" width="482.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="B22" x="9984.425" y="674.968" width="482.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="B23" x="10470.425" y="674.968" width="482.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="B24" x="10956.425" y="674.968" width="481.5" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="B25" x="11441.525" y="674.968" width="482.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="B26" x="11927.525" y="674.968" width="482.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="B27" x="12413.525" y="674.968" width="482.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="B28" x="12899.525" y="674.968" width="410.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="B29" x="13313.525" y="674.968" width="410.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="B30" x="13727.525" y="674.968" width="410.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="B31" x="14141.525" y="674.968" width="414" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="B32" x="14559.125" y="674.968" width="414" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="B33" x="14976.725" y="674.968" width="414" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="B34" x="15394.325" y="674.968" width="419.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="B35" x="15817.325" y="674.968" width="169.2" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="B01" x="166.775" y="674.968" width="295.2" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="B02" x="465.575" y="674.968" width="446.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="B03" x="915.575" y="674.968" width="446.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="B04" x="1365.575" y="674.968" width="446.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="B05" x="1815.575" y="674.968" width="446.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="B06" x="2265.575" y="674.968" width="446.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="B07" x="2715.575" y="674.968" width="446.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="B08" x="3165.575" y="674.968" width="482.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="B09" x="3651.575" y="674.968" width="482.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="B10" x="4137.575" y="674.968" width="482.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="B11" x="4623.575" y="674.968" width="482.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="B12" x="5109.575" y="674.968" width="482.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="B13" x="5595.575" y="674.968" width="482.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="B14" x="6081.575" y="674.968" width="482.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="B15" x="6567.575" y="674.968" width="482.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="B16" x="7053.575" y="674.968" width="482.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="B17" x="7539.575" y="674.968" width="482.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="B18" x="8025.575" y="674.968" width="482.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="B19" x="8511.575" y="674.968" width="482.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="B20" x="8997.575" y="674.968" width="482.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="B21" x="9483.575" y="674.968" width="482.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="B22" x="9969.575" y="674.968" width="482.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="B23" x="10455.575" y="674.968" width="482.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="B24" x="10941.575" y="674.968" width="481.5" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="B25" x="11426.675" y="674.968" width="482.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="B26" x="11912.675" y="674.968" width="482.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="B27" x="12398.675" y="674.968" width="482.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="B28" x="12884.675" y="674.968" width="482.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="B29" x="13370.675" y="674.968" width="410.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="B30" x="13784.675" y="674.968" width="410.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="B31" x="14198.675" y="674.968" width="414" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="B32" x="14616.275" y="674.968" width="414" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="B33" x="15033.875" y="674.968" width="414" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="B34" x="15451.475" y="674.968" width="419.4" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="B35" x="15874.475" y="674.968" width="169.2" height="291.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
     </g>
     <g id="Row_C_trim">
       <rect id="C01" x="193.775" y="982.768" width="311.4" height="532.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
@@ -706,41 +706,41 @@
       <rect id="D35" x="15789.353" y="1531.768" width="201.6" height="507.6" fill="none" stroke="#ec008c" stroke-width="0.5"/>
     </g>
     <g id="Row_E_trim">
-      <rect id="E01" x="259.475" y="2039.368" width="334.8" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="E02" x="597.875" y="2039.368" width="446.4" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="E03" x="1047.875" y="2039.368" width="439.2" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="E04" x="1490.675" y="2039.368" width="439.2" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="E05" x="1933.475" y="2039.368" width="439.2" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="E06" x="2376.275" y="2039.368" width="439.2" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="E07" x="2819.075" y="2039.368" width="439.2" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="E08" x="3261.875" y="2039.368" width="473.4" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="E09" x="3738.875" y="2039.368" width="475.2" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="E10" x="4217.675" y="2039.368" width="475.2" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="E11" x="4696.475" y="2039.368" width="475.2" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="E12" x="5175.275" y="2039.368" width="475.2" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="E13" x="5654.075" y="2039.368" width="475.2" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="E14" x="6132.875" y="2039.368" width="475.2" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="E15" x="6611.675" y="2039.368" width="475.2" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="E16" x="7090.475" y="2039.368" width="478.8" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="E17" x="7572.875" y="2039.368" width="471.6" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="E18" x="8048.075" y="2039.368" width="471.6" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="E19" x="8523.275" y="2039.368" width="471.6" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="E20" x="8998.475" y="2039.368" width="471.6" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="E21" x="9473.675" y="2039.368" width="471.6" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="E22" x="9948.875" y="2039.368" width="471.6" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="E23" x="10424.075" y="2039.368" width="471.6" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="E24" x="10899.275" y="2039.368" width="471.6" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="E25" x="11374.475" y="2039.368" width="475.2" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="E26" x="11853.275" y="2039.368" width="475.2" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="E27" x="12332.075" y="2039.368" width="475.2" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="E28" x="12810.875" y="2039.368" width="410.4" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="E29" x="13224.875" y="2039.368" width="410.4" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="E30" x="13638.875" y="2039.368" width="410.4" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="E31" x="14052.875" y="2039.368" width="414" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="E32" x="14470.475" y="2039.368" width="414" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="E33" x="14888.075" y="2039.368" width="414" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="E34" x="15305.675" y="2039.368" width="410.4" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
-      <rect id="E35" x="15719.675" y="2039.368" width="223.2" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="E01" x="245.975" y="2039.368" width="334.8" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="E02" x="584.375" y="2039.368" width="446.4" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="E03" x="1034.375" y="2039.368" width="439.2" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="E04" x="1477.175" y="2039.368" width="439.2" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="E05" x="1919.975" y="2039.368" width="439.2" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="E06" x="2362.775" y="2039.368" width="439.2" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="E07" x="2805.575" y="2039.368" width="439.2" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="E08" x="3248.375" y="2039.368" width="473.4" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="E09" x="3725.375" y="2039.368" width="475.2" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="E10" x="4204.175" y="2039.368" width="475.2" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="E11" x="4682.975" y="2039.368" width="475.2" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="E12" x="5161.775" y="2039.368" width="475.2" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="E13" x="5640.575" y="2039.368" width="475.2" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="E14" x="6119.375" y="2039.368" width="475.2" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="E15" x="6598.175" y="2039.368" width="475.2" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="E16" x="7076.975" y="2039.368" width="478.8" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="E17" x="7559.375" y="2039.368" width="471.6" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="E18" x="8034.575" y="2039.368" width="471.6" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="E19" x="8509.775" y="2039.368" width="471.6" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="E20" x="8984.975" y="2039.368" width="471.6" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="E21" x="9460.175" y="2039.368" width="471.6" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="E22" x="9935.375" y="2039.368" width="471.6" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="E23" x="10410.575" y="2039.368" width="471.6" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="E24" x="10885.775" y="2039.368" width="471.6" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="E25" x="11360.975" y="2039.368" width="475.2" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="E26" x="11839.775" y="2039.368" width="475.2" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="E27" x="12318.575" y="2039.368" width="475.2" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="E28" x="12797.375" y="2039.368" width="475.2" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="E29" x="13276.175" y="2039.368" width="410.4" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="E30" x="13690.175" y="2039.368" width="410.4" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="E31" x="14104.175" y="2039.368" width="414" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="E32" x="14521.775" y="2039.368" width="414" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="E33" x="14939.375" y="2039.368" width="414" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="E34" x="15356.975" y="2039.368" width="410.4" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
+      <rect id="E35" x="15770.975" y="2039.368" width="223.2" height="262.8" fill="none" stroke="#ec008c" stroke-width="0.5"/>
     </g>
     <g id="Row_F_trim">
       <rect id="F01" x="253.625" y="2318.368" width="334.8" height="52.2" fill="none" stroke="#ec008c" stroke-width="0.5"/>
@@ -1152,41 +1152,41 @@
       <rect id="A35_safe_area" x="15883.475" y="129.568" width="100.8" height="522" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
     </g>
     <g id="Row_B_safe_area">
-      <rect id="B01_safe_area" x="188.825" y="682.168" width="280.8" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="B02_safe_area" x="487.625" y="682.168" width="432" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="B03_safe_area" x="937.625" y="682.168" width="432" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="B04_safe_area" x="1387.625" y="682.168" width="432" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="B05_safe_area" x="1837.625" y="682.168" width="432" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="B06_safe_area" x="2287.625" y="682.168" width="432" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="B07_safe_area" x="2737.625" y="682.168" width="432" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="B08_safe_area" x="3187.625" y="682.168" width="468" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="B09_safe_area" x="3673.625" y="682.168" width="468" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="B10_safe_area" x="4159.625" y="682.168" width="468" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="B11_safe_area" x="4645.625" y="682.168" width="468" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="B12_safe_area" x="5131.625" y="682.168" width="468" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="B13_safe_area" x="5617.625" y="682.168" width="468" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="B14_safe_area" x="6103.625" y="682.168" width="468" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="B15_safe_area" x="6589.625" y="682.168" width="468" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="B16_safe_area" x="7075.625" y="682.168" width="468" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="B17_safe_area" x="7561.625" y="682.168" width="468" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="B18_safe_area" x="8047.625" y="682.168" width="468" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="B19_safe_area" x="8533.625" y="682.168" width="468" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="B20_safe_area" x="9019.625" y="682.168" width="468" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="B21_safe_area" x="9505.625" y="682.168" width="468" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="B22_safe_area" x="9991.625" y="682.168" width="468" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="B23_safe_area" x="10477.625" y="682.168" width="468" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="B24_safe_area" x="10963.625" y="682.168" width="467.1" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="B25_safe_area" x="11448.725" y="682.168" width="468" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="B26_safe_area" x="11934.725" y="682.168" width="468" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="B27_safe_area" x="12420.725" y="682.168" width="468" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="B28_safe_area" x="12906.725" y="682.168" width="396" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="B29_safe_area" x="13320.725" y="682.168" width="396" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="B30_safe_area" x="13734.725" y="682.168" width="396" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="B31_safe_area" x="14148.725" y="682.168" width="399.6" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="B32_safe_area" x="14566.325" y="682.168" width="399.6" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="B33_safe_area" x="14983.925" y="682.168" width="399.6" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="B34_safe_area" x="15401.525" y="682.168" width="405" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="B35_safe_area" x="15824.525" y="682.168" width="154.8" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="B01_safe_area" x="173.975" y="682.168" width="280.8" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="B02_safe_area" x="472.775" y="682.168" width="432" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="B03_safe_area" x="922.775" y="682.168" width="432" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="B04_safe_area" x="1372.775" y="682.168" width="432" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="B05_safe_area" x="1822.775" y="682.168" width="432" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="B06_safe_area" x="2272.775" y="682.168" width="432" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="B07_safe_area" x="2722.775" y="682.168" width="432" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="B08_safe_area" x="3172.775" y="682.168" width="468" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="B09_safe_area" x="3658.775" y="682.168" width="468" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="B10_safe_area" x="4144.775" y="682.168" width="468" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="B11_safe_area" x="4630.775" y="682.168" width="468" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="B12_safe_area" x="5116.775" y="682.168" width="468" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="B13_safe_area" x="5602.775" y="682.168" width="468" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="B14_safe_area" x="6088.775" y="682.168" width="468" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="B15_safe_area" x="6574.775" y="682.168" width="468" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="B16_safe_area" x="7060.775" y="682.168" width="468" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="B17_safe_area" x="7546.775" y="682.168" width="468" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="B18_safe_area" x="8032.775" y="682.168" width="468" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="B19_safe_area" x="8518.775" y="682.168" width="468" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="B20_safe_area" x="9004.775" y="682.168" width="468" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="B21_safe_area" x="9490.775" y="682.168" width="468" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="B22_safe_area" x="9976.775" y="682.168" width="468" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="B23_safe_area" x="10462.775" y="682.168" width="468" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="B24_safe_area" x="10948.775" y="682.168" width="467.1" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="B25_safe_area" x="11433.875" y="682.168" width="468" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="B26_safe_area" x="11919.875" y="682.168" width="468" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="B27_safe_area" x="12405.875" y="682.168" width="468" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="B28_safe_area" x="12891.875" y="682.168" width="468" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="B29_safe_area" x="13377.875" y="682.168" width="396" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="B30_safe_area" x="13791.875" y="682.168" width="396" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="B31_safe_area" x="14205.875" y="682.168" width="399.6" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="B32_safe_area" x="14623.475" y="682.168" width="399.6" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="B33_safe_area" x="15041.075" y="682.168" width="399.6" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="B34_safe_area" x="15458.675" y="682.168" width="405" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="B35_safe_area" x="15881.675" y="682.168" width="154.8" height="277.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
     </g>
     <g id="Row_C_safe_area">
       <rect id="C01_safe_area" x="200.975" y="989.968" width="297" height="518.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
@@ -1263,41 +1263,41 @@
       <rect id="D35_safe_area" x="15796.553" y="1538.968" width="187.2" height="493.2" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
     </g>
     <g id="Row_E_safe_area">
-      <rect id="E01_safe_area" x="266.675" y="2046.568" width="320.4" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="E02_safe_area" x="605.075" y="2046.568" width="432" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="E03_safe_area" x="1055.075" y="2046.568" width="424.8" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="E04_safe_area" x="1497.875" y="2046.568" width="424.8" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="E05_safe_area" x="1940.675" y="2046.568" width="424.8" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="E06_safe_area" x="2383.475" y="2046.568" width="424.8" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="E07_safe_area" x="2826.275" y="2046.568" width="424.8" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="E08_safe_area" x="3269.075" y="2046.568" width="459" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="E09_safe_area" x="3746.075" y="2046.568" width="460.8" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="E10_safe_area" x="4224.875" y="2046.568" width="460.8" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="E11_safe_area" x="4703.675" y="2046.568" width="460.8" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="E12_safe_area" x="5182.475" y="2046.568" width="460.8" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="E13_safe_area" x="5661.275" y="2046.568" width="460.8" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="E14_safe_area" x="6140.075" y="2046.568" width="460.8" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="E15_safe_area" x="6618.875" y="2046.568" width="460.8" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="E16_safe_area" x="7097.675" y="2046.568" width="464.4" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="E17_safe_area" x="7580.075" y="2046.568" width="457.2" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="E18_safe_area" x="8055.275" y="2046.568" width="457.2" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="E19_safe_area" x="8530.475" y="2046.568" width="457.2" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="E20_safe_area" x="9005.675" y="2046.568" width="457.2" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="E21_safe_area" x="9480.875" y="2046.568" width="457.2" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="E22_safe_area" x="9956.075" y="2046.568" width="457.2" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="E23_safe_area" x="10431.275" y="2046.568" width="457.2" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="E24_safe_area" x="10906.475" y="2046.568" width="457.2" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="E25_safe_area" x="11381.675" y="2046.568" width="460.8" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="E26_safe_area" x="11860.475" y="2046.568" width="460.8" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="E27_safe_area" x="12339.275" y="2046.568" width="460.8" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="E28_safe_area" x="12818.075" y="2046.568" width="396" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="E29_safe_area" x="13232.075" y="2046.568" width="396" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="E30_safe_area" x="13646.075" y="2046.568" width="396" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="E31_safe_area" x="14060.075" y="2046.568" width="399.6" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="E32_safe_area" x="14477.675" y="2046.568" width="399.6" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="E33_safe_area" x="14895.275" y="2046.568" width="399.6" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="E34_safe_area" x="15312.875" y="2046.568" width="396" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
-      <rect id="E35_safe_area" x="15726.875" y="2046.568" width="208.8" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="E01_safe_area" x="253.175" y="2046.568" width="320.4" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="E02_safe_area" x="591.575" y="2046.568" width="432" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="E03_safe_area" x="1041.575" y="2046.568" width="424.8" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="E04_safe_area" x="1484.375" y="2046.568" width="424.8" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="E05_safe_area" x="1927.175" y="2046.568" width="424.8" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="E06_safe_area" x="2369.975" y="2046.568" width="424.8" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="E07_safe_area" x="2812.775" y="2046.568" width="424.8" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="E08_safe_area" x="3255.575" y="2046.568" width="459" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="E09_safe_area" x="3732.575" y="2046.568" width="460.8" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="E10_safe_area" x="4211.375" y="2046.568" width="460.8" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="E11_safe_area" x="4690.175" y="2046.568" width="460.8" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="E12_safe_area" x="5168.975" y="2046.568" width="460.8" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="E13_safe_area" x="5647.775" y="2046.568" width="460.8" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="E14_safe_area" x="6126.575" y="2046.568" width="460.8" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="E15_safe_area" x="6605.375" y="2046.568" width="460.8" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="E16_safe_area" x="7084.175" y="2046.568" width="464.4" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="E17_safe_area" x="7566.575" y="2046.568" width="457.2" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="E18_safe_area" x="8041.775" y="2046.568" width="457.2" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="E19_safe_area" x="8516.975" y="2046.568" width="457.2" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="E20_safe_area" x="8992.175" y="2046.568" width="457.2" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="E21_safe_area" x="9467.375" y="2046.568" width="457.2" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="E22_safe_area" x="9942.575" y="2046.568" width="457.2" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="E23_safe_area" x="10417.775" y="2046.568" width="457.2" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="E24_safe_area" x="10892.975" y="2046.568" width="457.2" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="E25_safe_area" x="11368.175" y="2046.568" width="460.8" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="E26_safe_area" x="11846.975" y="2046.568" width="460.8" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="E27_safe_area" x="12325.775" y="2046.568" width="460.8" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="E28_safe_area" x="12804.575" y="2046.568" width="460.8" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="E29_safe_area" x="13283.375" y="2046.568" width="396" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="E30_safe_area" x="13697.375" y="2046.568" width="396" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="E31_safe_area" x="14111.375" y="2046.568" width="399.6" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="E32_safe_area" x="14528.975" y="2046.568" width="399.6" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="E33_safe_area" x="14946.575" y="2046.568" width="399.6" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="E34_safe_area" x="15364.175" y="2046.568" width="396" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
+      <rect id="E35_safe_area" x="15778.175" y="2046.568" width="208.8" height="248.4" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
     </g>
     <g id="Row_F_safe_area">
       <rect id="F01_safe_area" x="260.825" y="2325.568" width="320.4" height="37.8" fill="none" stroke="#00aeef" stroke-width="0.5" stroke-dasharray="4 2"/>
@@ -1709,41 +1709,41 @@
       <text id="A35_label" font-family="Arial, Helvetica, sans-serif"><tspan x="15933.875" y="390.522" font-size="23.04" font-weight="bold" text-anchor="middle" fill="#231f20">A35</tspan><tspan x="15933.875" y="407.111" font-size="13.824" text-anchor="middle" fill="#231f20">16 × 74.5</tspan></text>
     </g>
     <g id="Row_B_labels">
-      <text id="B01_label" font-family="Arial, Helvetica, sans-serif"><tspan x="329.225" y="820.65" font-size="59.04" font-weight="bold" text-anchor="middle" fill="#231f20">B01</tspan><tspan x="329.225" y="863.159" font-size="35.424" text-anchor="middle" fill="#231f20">41 × 40.5</tspan></text>
-      <text id="B02_label" font-family="Arial, Helvetica, sans-serif"><tspan x="703.625" y="820.589" font-size="89.28" font-weight="bold" text-anchor="middle" fill="#231f20">B02</tspan><tspan x="703.625" y="884.871" font-size="53.568" text-anchor="middle" fill="#231f20">62 × 40.5</tspan></text>
-      <text id="B03_label" font-family="Arial, Helvetica, sans-serif"><tspan x="1153.625" y="820.589" font-size="89.28" font-weight="bold" text-anchor="middle" fill="#231f20">B03</tspan><tspan x="1153.625" y="884.871" font-size="53.568" text-anchor="middle" fill="#231f20">62 × 40.5</tspan></text>
-      <text id="B04_label" font-family="Arial, Helvetica, sans-serif"><tspan x="1603.625" y="820.589" font-size="89.28" font-weight="bold" text-anchor="middle" fill="#231f20">B04</tspan><tspan x="1603.625" y="884.871" font-size="53.568" text-anchor="middle" fill="#231f20">62 × 40.5</tspan></text>
-      <text id="B05_label" font-family="Arial, Helvetica, sans-serif"><tspan x="2053.625" y="820.589" font-size="89.28" font-weight="bold" text-anchor="middle" fill="#231f20">B05</tspan><tspan x="2053.625" y="884.871" font-size="53.568" text-anchor="middle" fill="#231f20">62 × 40.5</tspan></text>
-      <text id="B06_label" font-family="Arial, Helvetica, sans-serif"><tspan x="2503.625" y="820.589" font-size="89.28" font-weight="bold" text-anchor="middle" fill="#231f20">B06</tspan><tspan x="2503.625" y="884.871" font-size="53.568" text-anchor="middle" fill="#231f20">62 × 40.5</tspan></text>
-      <text id="B07_label" font-family="Arial, Helvetica, sans-serif"><tspan x="2953.625" y="820.589" font-size="89.28" font-weight="bold" text-anchor="middle" fill="#231f20">B07</tspan><tspan x="2953.625" y="884.871" font-size="53.568" text-anchor="middle" fill="#231f20">62 × 40.5</tspan></text>
-      <text id="B08_label" font-family="Arial, Helvetica, sans-serif"><tspan x="3421.625" y="820.576" font-size="96" font-weight="bold" text-anchor="middle" fill="#231f20">B08</tspan><tspan x="3421.625" y="889.696" font-size="57.6" text-anchor="middle" fill="#231f20">67 × 40.5</tspan></text>
-      <text id="B09_label" font-family="Arial, Helvetica, sans-serif"><tspan x="3907.625" y="820.576" font-size="96" font-weight="bold" text-anchor="middle" fill="#231f20">B09</tspan><tspan x="3907.625" y="889.696" font-size="57.6" text-anchor="middle" fill="#231f20">67 × 40.5</tspan></text>
-      <text id="B10_label" font-family="Arial, Helvetica, sans-serif"><tspan x="4393.625" y="820.576" font-size="96" font-weight="bold" text-anchor="middle" fill="#231f20">B10</tspan><tspan x="4393.625" y="889.696" font-size="57.6" text-anchor="middle" fill="#231f20">67 × 40.5</tspan></text>
-      <text id="B11_label" font-family="Arial, Helvetica, sans-serif"><tspan x="4879.625" y="820.576" font-size="96" font-weight="bold" text-anchor="middle" fill="#231f20">B11</tspan><tspan x="4879.625" y="889.696" font-size="57.6" text-anchor="middle" fill="#231f20">67 × 40.5</tspan></text>
-      <text id="B12_label" font-family="Arial, Helvetica, sans-serif"><tspan x="5365.625" y="820.576" font-size="96" font-weight="bold" text-anchor="middle" fill="#231f20">B12</tspan><tspan x="5365.625" y="889.696" font-size="57.6" text-anchor="middle" fill="#231f20">67 × 40.5</tspan></text>
-      <text id="B13_label" font-family="Arial, Helvetica, sans-serif"><tspan x="5851.625" y="820.576" font-size="96" font-weight="bold" text-anchor="middle" fill="#231f20">B13</tspan><tspan x="5851.625" y="889.696" font-size="57.6" text-anchor="middle" fill="#231f20">67 × 40.5</tspan></text>
-      <text id="B14_label" font-family="Arial, Helvetica, sans-serif"><tspan x="6337.625" y="820.576" font-size="96" font-weight="bold" text-anchor="middle" fill="#231f20">B14</tspan><tspan x="6337.625" y="889.696" font-size="57.6" text-anchor="middle" fill="#231f20">67 × 40.5</tspan></text>
-      <text id="B15_label" font-family="Arial, Helvetica, sans-serif"><tspan x="6823.625" y="820.576" font-size="96" font-weight="bold" text-anchor="middle" fill="#231f20">B15</tspan><tspan x="6823.625" y="889.696" font-size="57.6" text-anchor="middle" fill="#231f20">67 × 40.5</tspan></text>
-      <text id="B16_label" font-family="Arial, Helvetica, sans-serif"><tspan x="7309.625" y="820.576" font-size="96" font-weight="bold" text-anchor="middle" fill="#231f20">B16</tspan><tspan x="7309.625" y="889.696" font-size="57.6" text-anchor="middle" fill="#231f20">67 × 40.5</tspan></text>
-      <text id="B17_label" font-family="Arial, Helvetica, sans-serif"><tspan x="7795.625" y="820.576" font-size="96" font-weight="bold" text-anchor="middle" fill="#231f20">B17</tspan><tspan x="7795.625" y="889.696" font-size="57.6" text-anchor="middle" fill="#231f20">67 × 40.5</tspan></text>
-      <text id="B18_label" font-family="Arial, Helvetica, sans-serif"><tspan x="8281.625" y="820.576" font-size="96" font-weight="bold" text-anchor="middle" fill="#231f20">B18</tspan><tspan x="8281.625" y="889.696" font-size="57.6" text-anchor="middle" fill="#231f20">67 × 40.5</tspan></text>
-      <text id="B19_label" font-family="Arial, Helvetica, sans-serif"><tspan x="8767.625" y="820.576" font-size="96" font-weight="bold" text-anchor="middle" fill="#231f20">B19</tspan><tspan x="8767.625" y="889.696" font-size="57.6" text-anchor="middle" fill="#231f20">67 × 40.5</tspan></text>
-      <text id="B20_label" font-family="Arial, Helvetica, sans-serif"><tspan x="9253.625" y="820.576" font-size="96" font-weight="bold" text-anchor="middle" fill="#231f20">B20</tspan><tspan x="9253.625" y="889.696" font-size="57.6" text-anchor="middle" fill="#231f20">67 × 40.5</tspan></text>
-      <text id="B21_label" font-family="Arial, Helvetica, sans-serif"><tspan x="9739.625" y="820.576" font-size="96" font-weight="bold" text-anchor="middle" fill="#231f20">B21</tspan><tspan x="9739.625" y="889.696" font-size="57.6" text-anchor="middle" fill="#231f20">67 × 40.5</tspan></text>
-      <text id="B22_label" font-family="Arial, Helvetica, sans-serif"><tspan x="10225.625" y="820.576" font-size="96" font-weight="bold" text-anchor="middle" fill="#231f20">B22</tspan><tspan x="10225.625" y="889.696" font-size="57.6" text-anchor="middle" fill="#231f20">67 × 40.5</tspan></text>
-      <text id="B23_label" font-family="Arial, Helvetica, sans-serif"><tspan x="10711.625" y="820.576" font-size="96" font-weight="bold" text-anchor="middle" fill="#231f20">B23</tspan><tspan x="10711.625" y="889.696" font-size="57.6" text-anchor="middle" fill="#231f20">67 × 40.5</tspan></text>
-      <text id="B24_label" font-family="Arial, Helvetica, sans-serif"><tspan x="11197.175" y="820.576" font-size="96" font-weight="bold" text-anchor="middle" fill="#231f20">B24</tspan><tspan x="11197.175" y="889.696" font-size="57.6" text-anchor="middle" fill="#231f20">66.875 × 40.5</tspan></text>
-      <text id="B25_label" font-family="Arial, Helvetica, sans-serif"><tspan x="11682.725" y="820.576" font-size="96" font-weight="bold" text-anchor="middle" fill="#231f20">B25</tspan><tspan x="11682.725" y="889.696" font-size="57.6" text-anchor="middle" fill="#231f20">67 × 40.5</tspan></text>
-      <text id="B26_label" font-family="Arial, Helvetica, sans-serif"><tspan x="12168.725" y="820.576" font-size="96" font-weight="bold" text-anchor="middle" fill="#231f20">B26</tspan><tspan x="12168.725" y="889.696" font-size="57.6" text-anchor="middle" fill="#231f20">67 × 40.5</tspan></text>
-      <text id="B27_label" font-family="Arial, Helvetica, sans-serif"><tspan x="12654.725" y="820.576" font-size="96" font-weight="bold" text-anchor="middle" fill="#231f20">B27</tspan><tspan x="12654.725" y="889.696" font-size="57.6" text-anchor="middle" fill="#231f20">67 × 40.5</tspan></text>
-      <text id="B28_label" font-family="Arial, Helvetica, sans-serif"><tspan x="13104.725" y="791.055" font-size="82.08" font-weight="bold" text-anchor="middle" fill="#231f20">B28</tspan><tspan x="13104.725" y="850.153" font-size="49.248" text-anchor="middle" fill="#231f20">57 × 40.5</tspan><tspan x="13104.725" y="909.25" font-size="49.248" font-weight="bold" text-anchor="middle" fill="#ec0000">CHECK SIZE</tspan></text>
-      <text id="B29_label" font-family="Arial, Helvetica, sans-serif"><tspan x="13518.725" y="820.604" font-size="82.08" font-weight="bold" text-anchor="middle" fill="#231f20">B29</tspan><tspan x="13518.725" y="879.701" font-size="49.248" text-anchor="middle" fill="#231f20">57 × 40.5</tspan></text>
-      <text id="B30_label" font-family="Arial, Helvetica, sans-serif"><tspan x="13932.725" y="820.604" font-size="82.08" font-weight="bold" text-anchor="middle" fill="#231f20">B30</tspan><tspan x="13932.725" y="879.701" font-size="49.248" text-anchor="middle" fill="#231f20">57 × 40.5</tspan></text>
-      <text id="B31_label" font-family="Arial, Helvetica, sans-serif"><tspan x="14348.525" y="820.602" font-size="82.8" font-weight="bold" text-anchor="middle" fill="#231f20">B31</tspan><tspan x="14348.525" y="880.218" font-size="49.68" text-anchor="middle" fill="#231f20">57.5 × 40.5</tspan></text>
-      <text id="B32_label" font-family="Arial, Helvetica, sans-serif"><tspan x="14766.125" y="820.602" font-size="82.8" font-weight="bold" text-anchor="middle" fill="#231f20">B32</tspan><tspan x="14766.125" y="880.218" font-size="49.68" text-anchor="middle" fill="#231f20">57.5 × 40.5</tspan></text>
-      <text id="B33_label" font-family="Arial, Helvetica, sans-serif"><tspan x="15183.725" y="820.602" font-size="82.8" font-weight="bold" text-anchor="middle" fill="#231f20">B33</tspan><tspan x="15183.725" y="880.218" font-size="49.68" text-anchor="middle" fill="#231f20">57.5 × 40.5</tspan></text>
-      <text id="B34_label" font-family="Arial, Helvetica, sans-serif"><tspan x="15604.025" y="820.6" font-size="83.88" font-weight="bold" text-anchor="middle" fill="#231f20">B34</tspan><tspan x="15604.025" y="880.994" font-size="50.328" text-anchor="middle" fill="#231f20">58.25 × 40.5</tspan></text>
-      <text id="B35_label" font-family="Arial, Helvetica, sans-serif"><tspan x="15901.925" y="820.7" font-size="33.84" font-weight="bold" text-anchor="middle" fill="#231f20">B35</tspan><tspan x="15901.925" y="845.065" font-size="20.304" text-anchor="middle" fill="#231f20">23.5 × 40.5</tspan></text>
+      <text id="B01_label" font-family="Arial, Helvetica, sans-serif"><tspan x="314.375" y="820.65" font-size="59.04" font-weight="bold" text-anchor="middle" fill="#231f20">B01</tspan><tspan x="314.375" y="863.159" font-size="35.424" text-anchor="middle" fill="#231f20">41 × 40.5</tspan></text>
+      <text id="B02_label" font-family="Arial, Helvetica, sans-serif"><tspan x="688.775" y="820.589" font-size="89.28" font-weight="bold" text-anchor="middle" fill="#231f20">B02</tspan><tspan x="688.775" y="884.871" font-size="53.568" text-anchor="middle" fill="#231f20">62 × 40.5</tspan></text>
+      <text id="B03_label" font-family="Arial, Helvetica, sans-serif"><tspan x="1138.775" y="820.589" font-size="89.28" font-weight="bold" text-anchor="middle" fill="#231f20">B03</tspan><tspan x="1138.775" y="884.871" font-size="53.568" text-anchor="middle" fill="#231f20">62 × 40.5</tspan></text>
+      <text id="B04_label" font-family="Arial, Helvetica, sans-serif"><tspan x="1588.775" y="820.589" font-size="89.28" font-weight="bold" text-anchor="middle" fill="#231f20">B04</tspan><tspan x="1588.775" y="884.871" font-size="53.568" text-anchor="middle" fill="#231f20">62 × 40.5</tspan></text>
+      <text id="B05_label" font-family="Arial, Helvetica, sans-serif"><tspan x="2038.775" y="820.589" font-size="89.28" font-weight="bold" text-anchor="middle" fill="#231f20">B05</tspan><tspan x="2038.775" y="884.871" font-size="53.568" text-anchor="middle" fill="#231f20">62 × 40.5</tspan></text>
+      <text id="B06_label" font-family="Arial, Helvetica, sans-serif"><tspan x="2488.775" y="820.589" font-size="89.28" font-weight="bold" text-anchor="middle" fill="#231f20">B06</tspan><tspan x="2488.775" y="884.871" font-size="53.568" text-anchor="middle" fill="#231f20">62 × 40.5</tspan></text>
+      <text id="B07_label" font-family="Arial, Helvetica, sans-serif"><tspan x="2938.775" y="820.589" font-size="89.28" font-weight="bold" text-anchor="middle" fill="#231f20">B07</tspan><tspan x="2938.775" y="884.871" font-size="53.568" text-anchor="middle" fill="#231f20">62 × 40.5</tspan></text>
+      <text id="B08_label" font-family="Arial, Helvetica, sans-serif"><tspan x="3406.775" y="820.576" font-size="96" font-weight="bold" text-anchor="middle" fill="#231f20">B08</tspan><tspan x="3406.775" y="889.696" font-size="57.6" text-anchor="middle" fill="#231f20">67 × 40.5</tspan></text>
+      <text id="B09_label" font-family="Arial, Helvetica, sans-serif"><tspan x="3892.775" y="820.576" font-size="96" font-weight="bold" text-anchor="middle" fill="#231f20">B09</tspan><tspan x="3892.775" y="889.696" font-size="57.6" text-anchor="middle" fill="#231f20">67 × 40.5</tspan></text>
+      <text id="B10_label" font-family="Arial, Helvetica, sans-serif"><tspan x="4378.775" y="820.576" font-size="96" font-weight="bold" text-anchor="middle" fill="#231f20">B10</tspan><tspan x="4378.775" y="889.696" font-size="57.6" text-anchor="middle" fill="#231f20">67 × 40.5</tspan></text>
+      <text id="B11_label" font-family="Arial, Helvetica, sans-serif"><tspan x="4864.775" y="820.576" font-size="96" font-weight="bold" text-anchor="middle" fill="#231f20">B11</tspan><tspan x="4864.775" y="889.696" font-size="57.6" text-anchor="middle" fill="#231f20">67 × 40.5</tspan></text>
+      <text id="B12_label" font-family="Arial, Helvetica, sans-serif"><tspan x="5350.775" y="820.576" font-size="96" font-weight="bold" text-anchor="middle" fill="#231f20">B12</tspan><tspan x="5350.775" y="889.696" font-size="57.6" text-anchor="middle" fill="#231f20">67 × 40.5</tspan></text>
+      <text id="B13_label" font-family="Arial, Helvetica, sans-serif"><tspan x="5836.775" y="820.576" font-size="96" font-weight="bold" text-anchor="middle" fill="#231f20">B13</tspan><tspan x="5836.775" y="889.696" font-size="57.6" text-anchor="middle" fill="#231f20">67 × 40.5</tspan></text>
+      <text id="B14_label" font-family="Arial, Helvetica, sans-serif"><tspan x="6322.775" y="820.576" font-size="96" font-weight="bold" text-anchor="middle" fill="#231f20">B14</tspan><tspan x="6322.775" y="889.696" font-size="57.6" text-anchor="middle" fill="#231f20">67 × 40.5</tspan></text>
+      <text id="B15_label" font-family="Arial, Helvetica, sans-serif"><tspan x="6808.775" y="820.576" font-size="96" font-weight="bold" text-anchor="middle" fill="#231f20">B15</tspan><tspan x="6808.775" y="889.696" font-size="57.6" text-anchor="middle" fill="#231f20">67 × 40.5</tspan></text>
+      <text id="B16_label" font-family="Arial, Helvetica, sans-serif"><tspan x="7294.775" y="820.576" font-size="96" font-weight="bold" text-anchor="middle" fill="#231f20">B16</tspan><tspan x="7294.775" y="889.696" font-size="57.6" text-anchor="middle" fill="#231f20">67 × 40.5</tspan></text>
+      <text id="B17_label" font-family="Arial, Helvetica, sans-serif"><tspan x="7780.775" y="820.576" font-size="96" font-weight="bold" text-anchor="middle" fill="#231f20">B17</tspan><tspan x="7780.775" y="889.696" font-size="57.6" text-anchor="middle" fill="#231f20">67 × 40.5</tspan></text>
+      <text id="B18_label" font-family="Arial, Helvetica, sans-serif"><tspan x="8266.775" y="820.576" font-size="96" font-weight="bold" text-anchor="middle" fill="#231f20">B18</tspan><tspan x="8266.775" y="889.696" font-size="57.6" text-anchor="middle" fill="#231f20">67 × 40.5</tspan></text>
+      <text id="B19_label" font-family="Arial, Helvetica, sans-serif"><tspan x="8752.775" y="820.576" font-size="96" font-weight="bold" text-anchor="middle" fill="#231f20">B19</tspan><tspan x="8752.775" y="889.696" font-size="57.6" text-anchor="middle" fill="#231f20">67 × 40.5</tspan></text>
+      <text id="B20_label" font-family="Arial, Helvetica, sans-serif"><tspan x="9238.775" y="820.576" font-size="96" font-weight="bold" text-anchor="middle" fill="#231f20">B20</tspan><tspan x="9238.775" y="889.696" font-size="57.6" text-anchor="middle" fill="#231f20">67 × 40.5</tspan></text>
+      <text id="B21_label" font-family="Arial, Helvetica, sans-serif"><tspan x="9724.775" y="820.576" font-size="96" font-weight="bold" text-anchor="middle" fill="#231f20">B21</tspan><tspan x="9724.775" y="889.696" font-size="57.6" text-anchor="middle" fill="#231f20">67 × 40.5</tspan></text>
+      <text id="B22_label" font-family="Arial, Helvetica, sans-serif"><tspan x="10210.775" y="820.576" font-size="96" font-weight="bold" text-anchor="middle" fill="#231f20">B22</tspan><tspan x="10210.775" y="889.696" font-size="57.6" text-anchor="middle" fill="#231f20">67 × 40.5</tspan></text>
+      <text id="B23_label" font-family="Arial, Helvetica, sans-serif"><tspan x="10696.775" y="820.576" font-size="96" font-weight="bold" text-anchor="middle" fill="#231f20">B23</tspan><tspan x="10696.775" y="889.696" font-size="57.6" text-anchor="middle" fill="#231f20">67 × 40.5</tspan></text>
+      <text id="B24_label" font-family="Arial, Helvetica, sans-serif"><tspan x="11182.325" y="820.576" font-size="96" font-weight="bold" text-anchor="middle" fill="#231f20">B24</tspan><tspan x="11182.325" y="889.696" font-size="57.6" text-anchor="middle" fill="#231f20">66.875 × 40.5</tspan></text>
+      <text id="B25_label" font-family="Arial, Helvetica, sans-serif"><tspan x="11667.875" y="820.576" font-size="96" font-weight="bold" text-anchor="middle" fill="#231f20">B25</tspan><tspan x="11667.875" y="889.696" font-size="57.6" text-anchor="middle" fill="#231f20">67 × 40.5</tspan></text>
+      <text id="B26_label" font-family="Arial, Helvetica, sans-serif"><tspan x="12153.875" y="820.576" font-size="96" font-weight="bold" text-anchor="middle" fill="#231f20">B26</tspan><tspan x="12153.875" y="889.696" font-size="57.6" text-anchor="middle" fill="#231f20">67 × 40.5</tspan></text>
+      <text id="B27_label" font-family="Arial, Helvetica, sans-serif"><tspan x="12639.875" y="820.576" font-size="96" font-weight="bold" text-anchor="middle" fill="#231f20">B27</tspan><tspan x="12639.875" y="889.696" font-size="57.6" text-anchor="middle" fill="#231f20">67 × 40.5</tspan></text>
+      <text id="B28_label" font-family="Arial, Helvetica, sans-serif"><tspan x="13125.875" y="820.576" font-size="96" font-weight="bold" text-anchor="middle" fill="#231f20">B28</tspan><tspan x="13125.875" y="889.696" font-size="57.6" text-anchor="middle" fill="#231f20">67 × 40.5</tspan></text>
+      <text id="B29_label" font-family="Arial, Helvetica, sans-serif"><tspan x="13575.875" y="820.604" font-size="82.08" font-weight="bold" text-anchor="middle" fill="#231f20">B29</tspan><tspan x="13575.875" y="879.701" font-size="49.248" text-anchor="middle" fill="#231f20">57 × 40.5</tspan></text>
+      <text id="B30_label" font-family="Arial, Helvetica, sans-serif"><tspan x="13989.875" y="820.604" font-size="82.08" font-weight="bold" text-anchor="middle" fill="#231f20">B30</tspan><tspan x="13989.875" y="879.701" font-size="49.248" text-anchor="middle" fill="#231f20">57 × 40.5</tspan></text>
+      <text id="B31_label" font-family="Arial, Helvetica, sans-serif"><tspan x="14405.675" y="820.602" font-size="82.8" font-weight="bold" text-anchor="middle" fill="#231f20">B31</tspan><tspan x="14405.675" y="880.218" font-size="49.68" text-anchor="middle" fill="#231f20">57.5 × 40.5</tspan></text>
+      <text id="B32_label" font-family="Arial, Helvetica, sans-serif"><tspan x="14823.275" y="820.602" font-size="82.8" font-weight="bold" text-anchor="middle" fill="#231f20">B32</tspan><tspan x="14823.275" y="880.218" font-size="49.68" text-anchor="middle" fill="#231f20">57.5 × 40.5</tspan></text>
+      <text id="B33_label" font-family="Arial, Helvetica, sans-serif"><tspan x="15240.875" y="820.602" font-size="82.8" font-weight="bold" text-anchor="middle" fill="#231f20">B33</tspan><tspan x="15240.875" y="880.218" font-size="49.68" text-anchor="middle" fill="#231f20">57.5 × 40.5</tspan></text>
+      <text id="B34_label" font-family="Arial, Helvetica, sans-serif"><tspan x="15661.175" y="820.6" font-size="83.88" font-weight="bold" text-anchor="middle" fill="#231f20">B34</tspan><tspan x="15661.175" y="880.994" font-size="50.328" text-anchor="middle" fill="#231f20">58.25 × 40.5</tspan></text>
+      <text id="B35_label" font-family="Arial, Helvetica, sans-serif"><tspan x="15959.075" y="820.7" font-size="33.84" font-weight="bold" text-anchor="middle" fill="#231f20">B35</tspan><tspan x="15959.075" y="845.065" font-size="20.304" text-anchor="middle" fill="#231f20">23.5 × 40.5</tspan></text>
     </g>
     <g id="Row_C_labels">
       <text id="C01_label" font-family="Arial, Helvetica, sans-serif"><tspan x="349.475" y="1249.043" font-size="62.28" font-weight="bold" text-anchor="middle" fill="#231f20">C01</tspan><tspan x="349.475" y="1293.885" font-size="37.368" text-anchor="middle" fill="#231f20">43.25 × 74</tspan></text>
@@ -1820,41 +1820,41 @@
       <text id="D35_label" font-family="Arial, Helvetica, sans-serif"><tspan x="15890.153" y="1785.487" font-size="40.32" font-weight="bold" text-anchor="middle" fill="#231f20">D35</tspan><tspan x="15890.153" y="1814.518" font-size="24.192" text-anchor="middle" fill="#231f20">28 × 70.5</tspan></text>
     </g>
     <g id="Row_E_labels">
-      <text id="E01_label" font-family="Arial, Helvetica, sans-serif"><tspan x="426.875" y="2170.634" font-size="66.96" font-weight="bold" text-anchor="middle" fill="#231f20">E01</tspan><tspan x="426.875" y="2218.845" font-size="40.176" text-anchor="middle" fill="#231f20">46.5 × 36.5</tspan></text>
-      <text id="E02_label" font-family="Arial, Helvetica, sans-serif"><tspan x="821.075" y="2170.589" font-size="89.28" font-weight="bold" text-anchor="middle" fill="#231f20">E02</tspan><tspan x="821.075" y="2234.871" font-size="53.568" text-anchor="middle" fill="#231f20">62 × 36.5</tspan></text>
-      <text id="E03_label" font-family="Arial, Helvetica, sans-serif"><tspan x="1267.475" y="2170.592" font-size="87.84" font-weight="bold" text-anchor="middle" fill="#231f20">E03</tspan><tspan x="1267.475" y="2233.837" font-size="52.704" text-anchor="middle" fill="#231f20">61 × 36.5</tspan></text>
-      <text id="E04_label" font-family="Arial, Helvetica, sans-serif"><tspan x="1710.275" y="2170.592" font-size="87.84" font-weight="bold" text-anchor="middle" fill="#231f20">E04</tspan><tspan x="1710.275" y="2233.837" font-size="52.704" text-anchor="middle" fill="#231f20">61 × 36.5</tspan></text>
-      <text id="E05_label" font-family="Arial, Helvetica, sans-serif"><tspan x="2153.075" y="2170.592" font-size="87.84" font-weight="bold" text-anchor="middle" fill="#231f20">E05</tspan><tspan x="2153.075" y="2233.837" font-size="52.704" text-anchor="middle" fill="#231f20">61 × 36.5</tspan></text>
-      <text id="E06_label" font-family="Arial, Helvetica, sans-serif"><tspan x="2595.875" y="2170.592" font-size="87.84" font-weight="bold" text-anchor="middle" fill="#231f20">E06</tspan><tspan x="2595.875" y="2233.837" font-size="52.704" text-anchor="middle" fill="#231f20">61 × 36.5</tspan></text>
-      <text id="E07_label" font-family="Arial, Helvetica, sans-serif"><tspan x="3038.675" y="2170.592" font-size="87.84" font-weight="bold" text-anchor="middle" fill="#231f20">E07</tspan><tspan x="3038.675" y="2233.837" font-size="52.704" text-anchor="middle" fill="#231f20">61 × 36.5</tspan></text>
-      <text id="E08_label" font-family="Arial, Helvetica, sans-serif"><tspan x="3498.575" y="2170.579" font-size="94.68" font-weight="bold" text-anchor="middle" fill="#231f20">E08</tspan><tspan x="3498.575" y="2238.748" font-size="56.808" text-anchor="middle" fill="#231f20">65.75 × 36.5</tspan></text>
-      <text id="E09_label" font-family="Arial, Helvetica, sans-serif"><tspan x="3976.475" y="2170.578" font-size="95.04" font-weight="bold" text-anchor="middle" fill="#231f20">E09</tspan><tspan x="3976.475" y="2239.007" font-size="57.024" text-anchor="middle" fill="#231f20">66 × 36.5</tspan></text>
-      <text id="E10_label" font-family="Arial, Helvetica, sans-serif"><tspan x="4455.275" y="2170.578" font-size="95.04" font-weight="bold" text-anchor="middle" fill="#231f20">E10</tspan><tspan x="4455.275" y="2239.007" font-size="57.024" text-anchor="middle" fill="#231f20">66 × 36.5</tspan></text>
-      <text id="E11_label" font-family="Arial, Helvetica, sans-serif"><tspan x="4934.075" y="2170.578" font-size="95.04" font-weight="bold" text-anchor="middle" fill="#231f20">E11</tspan><tspan x="4934.075" y="2239.007" font-size="57.024" text-anchor="middle" fill="#231f20">66 × 36.5</tspan></text>
-      <text id="E12_label" font-family="Arial, Helvetica, sans-serif"><tspan x="5412.875" y="2170.578" font-size="95.04" font-weight="bold" text-anchor="middle" fill="#231f20">E12</tspan><tspan x="5412.875" y="2239.007" font-size="57.024" text-anchor="middle" fill="#231f20">66 × 36.5</tspan></text>
-      <text id="E13_label" font-family="Arial, Helvetica, sans-serif"><tspan x="5891.675" y="2170.578" font-size="95.04" font-weight="bold" text-anchor="middle" fill="#231f20">E13</tspan><tspan x="5891.675" y="2239.007" font-size="57.024" text-anchor="middle" fill="#231f20">66 × 36.5</tspan></text>
-      <text id="E14_label" font-family="Arial, Helvetica, sans-serif"><tspan x="6370.475" y="2170.578" font-size="95.04" font-weight="bold" text-anchor="middle" fill="#231f20">E14</tspan><tspan x="6370.475" y="2239.007" font-size="57.024" text-anchor="middle" fill="#231f20">66 × 36.5</tspan></text>
-      <text id="E15_label" font-family="Arial, Helvetica, sans-serif"><tspan x="6849.275" y="2170.578" font-size="95.04" font-weight="bold" text-anchor="middle" fill="#231f20">E15</tspan><tspan x="6849.275" y="2239.007" font-size="57.024" text-anchor="middle" fill="#231f20">66 × 36.5</tspan></text>
-      <text id="E16_label" font-family="Arial, Helvetica, sans-serif"><tspan x="7329.875" y="2170.576" font-size="95.76" font-weight="bold" text-anchor="middle" fill="#231f20">E16</tspan><tspan x="7329.875" y="2239.524" font-size="57.456" text-anchor="middle" fill="#231f20">66.5 × 36.5</tspan></text>
-      <text id="E17_label" font-family="Arial, Helvetica, sans-serif"><tspan x="7808.675" y="2170.579" font-size="94.32" font-weight="bold" text-anchor="middle" fill="#231f20">E17</tspan><tspan x="7808.675" y="2238.49" font-size="56.592" text-anchor="middle" fill="#231f20">65.5 × 36.5</tspan></text>
-      <text id="E18_label" font-family="Arial, Helvetica, sans-serif"><tspan x="8283.875" y="2170.579" font-size="94.32" font-weight="bold" text-anchor="middle" fill="#231f20">E18</tspan><tspan x="8283.875" y="2238.49" font-size="56.592" text-anchor="middle" fill="#231f20">65.5 × 36.5</tspan></text>
-      <text id="E19_label" font-family="Arial, Helvetica, sans-serif"><tspan x="8759.075" y="2170.579" font-size="94.32" font-weight="bold" text-anchor="middle" fill="#231f20">E19</tspan><tspan x="8759.075" y="2238.49" font-size="56.592" text-anchor="middle" fill="#231f20">65.5 × 36.5</tspan></text>
-      <text id="E20_label" font-family="Arial, Helvetica, sans-serif"><tspan x="9234.275" y="2170.579" font-size="94.32" font-weight="bold" text-anchor="middle" fill="#231f20">E20</tspan><tspan x="9234.275" y="2238.49" font-size="56.592" text-anchor="middle" fill="#231f20">65.5 × 36.5</tspan></text>
-      <text id="E21_label" font-family="Arial, Helvetica, sans-serif"><tspan x="9709.475" y="2170.579" font-size="94.32" font-weight="bold" text-anchor="middle" fill="#231f20">E21</tspan><tspan x="9709.475" y="2238.49" font-size="56.592" text-anchor="middle" fill="#231f20">65.5 × 36.5</tspan></text>
-      <text id="E22_label" font-family="Arial, Helvetica, sans-serif"><tspan x="10184.675" y="2170.579" font-size="94.32" font-weight="bold" text-anchor="middle" fill="#231f20">E22</tspan><tspan x="10184.675" y="2238.49" font-size="56.592" text-anchor="middle" fill="#231f20">65.5 × 36.5</tspan></text>
-      <text id="E23_label" font-family="Arial, Helvetica, sans-serif"><tspan x="10659.875" y="2170.579" font-size="94.32" font-weight="bold" text-anchor="middle" fill="#231f20">E23</tspan><tspan x="10659.875" y="2238.49" font-size="56.592" text-anchor="middle" fill="#231f20">65.5 × 36.5</tspan></text>
-      <text id="E24_label" font-family="Arial, Helvetica, sans-serif"><tspan x="11135.075" y="2170.579" font-size="94.32" font-weight="bold" text-anchor="middle" fill="#231f20">E24</tspan><tspan x="11135.075" y="2238.49" font-size="56.592" text-anchor="middle" fill="#231f20">65.5 × 36.5</tspan></text>
-      <text id="E25_label" font-family="Arial, Helvetica, sans-serif"><tspan x="11612.075" y="2170.578" font-size="95.04" font-weight="bold" text-anchor="middle" fill="#231f20">E25</tspan><tspan x="11612.075" y="2239.007" font-size="57.024" text-anchor="middle" fill="#231f20">66 × 36.5</tspan></text>
-      <text id="E26_label" font-family="Arial, Helvetica, sans-serif"><tspan x="12090.875" y="2170.578" font-size="95.04" font-weight="bold" text-anchor="middle" fill="#231f20">E26</tspan><tspan x="12090.875" y="2239.007" font-size="57.024" text-anchor="middle" fill="#231f20">66 × 36.5</tspan></text>
-      <text id="E27_label" font-family="Arial, Helvetica, sans-serif"><tspan x="12569.675" y="2170.578" font-size="95.04" font-weight="bold" text-anchor="middle" fill="#231f20">E27</tspan><tspan x="12569.675" y="2239.007" font-size="57.024" text-anchor="middle" fill="#231f20">66 × 36.5</tspan></text>
-      <text id="E28_label" font-family="Arial, Helvetica, sans-serif"><tspan x="13016.075" y="2141.055" font-size="82.08" font-weight="bold" text-anchor="middle" fill="#231f20">E28</tspan><tspan x="13016.075" y="2200.153" font-size="49.248" text-anchor="middle" fill="#231f20">57 × 36.5</tspan><tspan x="13016.075" y="2259.25" font-size="49.248" font-weight="bold" text-anchor="middle" fill="#ec0000">CHECK SIZE</tspan></text>
-      <text id="E29_label" font-family="Arial, Helvetica, sans-serif"><tspan x="13430.075" y="2170.604" font-size="82.08" font-weight="bold" text-anchor="middle" fill="#231f20">E29</tspan><tspan x="13430.075" y="2229.701" font-size="49.248" text-anchor="middle" fill="#231f20">57 × 36.5</tspan></text>
-      <text id="E30_label" font-family="Arial, Helvetica, sans-serif"><tspan x="13844.075" y="2170.604" font-size="82.08" font-weight="bold" text-anchor="middle" fill="#231f20">E30</tspan><tspan x="13844.075" y="2229.701" font-size="49.248" text-anchor="middle" fill="#231f20">57 × 36.5</tspan></text>
-      <text id="E31_label" font-family="Arial, Helvetica, sans-serif"><tspan x="14259.875" y="2170.602" font-size="82.8" font-weight="bold" text-anchor="middle" fill="#231f20">E31</tspan><tspan x="14259.875" y="2230.218" font-size="49.68" text-anchor="middle" fill="#231f20">57.5 × 36.5</tspan></text>
-      <text id="E32_label" font-family="Arial, Helvetica, sans-serif"><tspan x="14677.475" y="2170.602" font-size="82.8" font-weight="bold" text-anchor="middle" fill="#231f20">E32</tspan><tspan x="14677.475" y="2230.218" font-size="49.68" text-anchor="middle" fill="#231f20">57.5 × 36.5</tspan></text>
-      <text id="E33_label" font-family="Arial, Helvetica, sans-serif"><tspan x="15095.075" y="2170.602" font-size="82.8" font-weight="bold" text-anchor="middle" fill="#231f20">E33</tspan><tspan x="15095.075" y="2230.218" font-size="49.68" text-anchor="middle" fill="#231f20">57.5 × 36.5</tspan></text>
-      <text id="E34_label" font-family="Arial, Helvetica, sans-serif"><tspan x="15510.875" y="2170.604" font-size="82.08" font-weight="bold" text-anchor="middle" fill="#231f20">E34</tspan><tspan x="15510.875" y="2229.701" font-size="49.248" text-anchor="middle" fill="#231f20">57 × 36.5</tspan></text>
-      <text id="E35_label" font-family="Arial, Helvetica, sans-serif"><tspan x="15831.275" y="2170.679" font-size="44.64" font-weight="bold" text-anchor="middle" fill="#231f20">E35</tspan><tspan x="15831.275" y="2202.82" font-size="26.784" text-anchor="middle" fill="#231f20">31 × 36.5</tspan></text>
+      <text id="E01_label" font-family="Arial, Helvetica, sans-serif"><tspan x="413.375" y="2170.634" font-size="66.96" font-weight="bold" text-anchor="middle" fill="#231f20">E01</tspan><tspan x="413.375" y="2218.845" font-size="40.176" text-anchor="middle" fill="#231f20">46.5 × 36.5</tspan></text>
+      <text id="E02_label" font-family="Arial, Helvetica, sans-serif"><tspan x="807.575" y="2170.589" font-size="89.28" font-weight="bold" text-anchor="middle" fill="#231f20">E02</tspan><tspan x="807.575" y="2234.871" font-size="53.568" text-anchor="middle" fill="#231f20">62 × 36.5</tspan></text>
+      <text id="E03_label" font-family="Arial, Helvetica, sans-serif"><tspan x="1253.975" y="2170.592" font-size="87.84" font-weight="bold" text-anchor="middle" fill="#231f20">E03</tspan><tspan x="1253.975" y="2233.837" font-size="52.704" text-anchor="middle" fill="#231f20">61 × 36.5</tspan></text>
+      <text id="E04_label" font-family="Arial, Helvetica, sans-serif"><tspan x="1696.775" y="2170.592" font-size="87.84" font-weight="bold" text-anchor="middle" fill="#231f20">E04</tspan><tspan x="1696.775" y="2233.837" font-size="52.704" text-anchor="middle" fill="#231f20">61 × 36.5</tspan></text>
+      <text id="E05_label" font-family="Arial, Helvetica, sans-serif"><tspan x="2139.575" y="2170.592" font-size="87.84" font-weight="bold" text-anchor="middle" fill="#231f20">E05</tspan><tspan x="2139.575" y="2233.837" font-size="52.704" text-anchor="middle" fill="#231f20">61 × 36.5</tspan></text>
+      <text id="E06_label" font-family="Arial, Helvetica, sans-serif"><tspan x="2582.375" y="2170.592" font-size="87.84" font-weight="bold" text-anchor="middle" fill="#231f20">E06</tspan><tspan x="2582.375" y="2233.837" font-size="52.704" text-anchor="middle" fill="#231f20">61 × 36.5</tspan></text>
+      <text id="E07_label" font-family="Arial, Helvetica, sans-serif"><tspan x="3025.175" y="2170.592" font-size="87.84" font-weight="bold" text-anchor="middle" fill="#231f20">E07</tspan><tspan x="3025.175" y="2233.837" font-size="52.704" text-anchor="middle" fill="#231f20">61 × 36.5</tspan></text>
+      <text id="E08_label" font-family="Arial, Helvetica, sans-serif"><tspan x="3485.075" y="2170.579" font-size="94.68" font-weight="bold" text-anchor="middle" fill="#231f20">E08</tspan><tspan x="3485.075" y="2238.748" font-size="56.808" text-anchor="middle" fill="#231f20">65.75 × 36.5</tspan></text>
+      <text id="E09_label" font-family="Arial, Helvetica, sans-serif"><tspan x="3962.975" y="2170.578" font-size="95.04" font-weight="bold" text-anchor="middle" fill="#231f20">E09</tspan><tspan x="3962.975" y="2239.007" font-size="57.024" text-anchor="middle" fill="#231f20">66 × 36.5</tspan></text>
+      <text id="E10_label" font-family="Arial, Helvetica, sans-serif"><tspan x="4441.775" y="2170.578" font-size="95.04" font-weight="bold" text-anchor="middle" fill="#231f20">E10</tspan><tspan x="4441.775" y="2239.007" font-size="57.024" text-anchor="middle" fill="#231f20">66 × 36.5</tspan></text>
+      <text id="E11_label" font-family="Arial, Helvetica, sans-serif"><tspan x="4920.575" y="2170.578" font-size="95.04" font-weight="bold" text-anchor="middle" fill="#231f20">E11</tspan><tspan x="4920.575" y="2239.007" font-size="57.024" text-anchor="middle" fill="#231f20">66 × 36.5</tspan></text>
+      <text id="E12_label" font-family="Arial, Helvetica, sans-serif"><tspan x="5399.375" y="2170.578" font-size="95.04" font-weight="bold" text-anchor="middle" fill="#231f20">E12</tspan><tspan x="5399.375" y="2239.007" font-size="57.024" text-anchor="middle" fill="#231f20">66 × 36.5</tspan></text>
+      <text id="E13_label" font-family="Arial, Helvetica, sans-serif"><tspan x="5878.175" y="2170.578" font-size="95.04" font-weight="bold" text-anchor="middle" fill="#231f20">E13</tspan><tspan x="5878.175" y="2239.007" font-size="57.024" text-anchor="middle" fill="#231f20">66 × 36.5</tspan></text>
+      <text id="E14_label" font-family="Arial, Helvetica, sans-serif"><tspan x="6356.975" y="2170.578" font-size="95.04" font-weight="bold" text-anchor="middle" fill="#231f20">E14</tspan><tspan x="6356.975" y="2239.007" font-size="57.024" text-anchor="middle" fill="#231f20">66 × 36.5</tspan></text>
+      <text id="E15_label" font-family="Arial, Helvetica, sans-serif"><tspan x="6835.775" y="2170.578" font-size="95.04" font-weight="bold" text-anchor="middle" fill="#231f20">E15</tspan><tspan x="6835.775" y="2239.007" font-size="57.024" text-anchor="middle" fill="#231f20">66 × 36.5</tspan></text>
+      <text id="E16_label" font-family="Arial, Helvetica, sans-serif"><tspan x="7316.375" y="2170.576" font-size="95.76" font-weight="bold" text-anchor="middle" fill="#231f20">E16</tspan><tspan x="7316.375" y="2239.524" font-size="57.456" text-anchor="middle" fill="#231f20">66.5 × 36.5</tspan></text>
+      <text id="E17_label" font-family="Arial, Helvetica, sans-serif"><tspan x="7795.175" y="2170.579" font-size="94.32" font-weight="bold" text-anchor="middle" fill="#231f20">E17</tspan><tspan x="7795.175" y="2238.49" font-size="56.592" text-anchor="middle" fill="#231f20">65.5 × 36.5</tspan></text>
+      <text id="E18_label" font-family="Arial, Helvetica, sans-serif"><tspan x="8270.375" y="2170.579" font-size="94.32" font-weight="bold" text-anchor="middle" fill="#231f20">E18</tspan><tspan x="8270.375" y="2238.49" font-size="56.592" text-anchor="middle" fill="#231f20">65.5 × 36.5</tspan></text>
+      <text id="E19_label" font-family="Arial, Helvetica, sans-serif"><tspan x="8745.575" y="2170.579" font-size="94.32" font-weight="bold" text-anchor="middle" fill="#231f20">E19</tspan><tspan x="8745.575" y="2238.49" font-size="56.592" text-anchor="middle" fill="#231f20">65.5 × 36.5</tspan></text>
+      <text id="E20_label" font-family="Arial, Helvetica, sans-serif"><tspan x="9220.775" y="2170.579" font-size="94.32" font-weight="bold" text-anchor="middle" fill="#231f20">E20</tspan><tspan x="9220.775" y="2238.49" font-size="56.592" text-anchor="middle" fill="#231f20">65.5 × 36.5</tspan></text>
+      <text id="E21_label" font-family="Arial, Helvetica, sans-serif"><tspan x="9695.975" y="2170.579" font-size="94.32" font-weight="bold" text-anchor="middle" fill="#231f20">E21</tspan><tspan x="9695.975" y="2238.49" font-size="56.592" text-anchor="middle" fill="#231f20">65.5 × 36.5</tspan></text>
+      <text id="E22_label" font-family="Arial, Helvetica, sans-serif"><tspan x="10171.175" y="2170.579" font-size="94.32" font-weight="bold" text-anchor="middle" fill="#231f20">E22</tspan><tspan x="10171.175" y="2238.49" font-size="56.592" text-anchor="middle" fill="#231f20">65.5 × 36.5</tspan></text>
+      <text id="E23_label" font-family="Arial, Helvetica, sans-serif"><tspan x="10646.375" y="2170.579" font-size="94.32" font-weight="bold" text-anchor="middle" fill="#231f20">E23</tspan><tspan x="10646.375" y="2238.49" font-size="56.592" text-anchor="middle" fill="#231f20">65.5 × 36.5</tspan></text>
+      <text id="E24_label" font-family="Arial, Helvetica, sans-serif"><tspan x="11121.575" y="2170.579" font-size="94.32" font-weight="bold" text-anchor="middle" fill="#231f20">E24</tspan><tspan x="11121.575" y="2238.49" font-size="56.592" text-anchor="middle" fill="#231f20">65.5 × 36.5</tspan></text>
+      <text id="E25_label" font-family="Arial, Helvetica, sans-serif"><tspan x="11598.575" y="2170.578" font-size="95.04" font-weight="bold" text-anchor="middle" fill="#231f20">E25</tspan><tspan x="11598.575" y="2239.007" font-size="57.024" text-anchor="middle" fill="#231f20">66 × 36.5</tspan></text>
+      <text id="E26_label" font-family="Arial, Helvetica, sans-serif"><tspan x="12077.375" y="2170.578" font-size="95.04" font-weight="bold" text-anchor="middle" fill="#231f20">E26</tspan><tspan x="12077.375" y="2239.007" font-size="57.024" text-anchor="middle" fill="#231f20">66 × 36.5</tspan></text>
+      <text id="E27_label" font-family="Arial, Helvetica, sans-serif"><tspan x="12556.175" y="2170.578" font-size="95.04" font-weight="bold" text-anchor="middle" fill="#231f20">E27</tspan><tspan x="12556.175" y="2239.007" font-size="57.024" text-anchor="middle" fill="#231f20">66 × 36.5</tspan></text>
+      <text id="E28_label" font-family="Arial, Helvetica, sans-serif"><tspan x="13034.975" y="2170.578" font-size="95.04" font-weight="bold" text-anchor="middle" fill="#231f20">E28</tspan><tspan x="13034.975" y="2239.007" font-size="57.024" text-anchor="middle" fill="#231f20">66 × 36.5</tspan></text>
+      <text id="E29_label" font-family="Arial, Helvetica, sans-serif"><tspan x="13481.375" y="2170.604" font-size="82.08" font-weight="bold" text-anchor="middle" fill="#231f20">E29</tspan><tspan x="13481.375" y="2229.701" font-size="49.248" text-anchor="middle" fill="#231f20">57 × 36.5</tspan></text>
+      <text id="E30_label" font-family="Arial, Helvetica, sans-serif"><tspan x="13895.375" y="2170.604" font-size="82.08" font-weight="bold" text-anchor="middle" fill="#231f20">E30</tspan><tspan x="13895.375" y="2229.701" font-size="49.248" text-anchor="middle" fill="#231f20">57 × 36.5</tspan></text>
+      <text id="E31_label" font-family="Arial, Helvetica, sans-serif"><tspan x="14311.175" y="2170.602" font-size="82.8" font-weight="bold" text-anchor="middle" fill="#231f20">E31</tspan><tspan x="14311.175" y="2230.218" font-size="49.68" text-anchor="middle" fill="#231f20">57.5 × 36.5</tspan></text>
+      <text id="E32_label" font-family="Arial, Helvetica, sans-serif"><tspan x="14728.775" y="2170.602" font-size="82.8" font-weight="bold" text-anchor="middle" fill="#231f20">E32</tspan><tspan x="14728.775" y="2230.218" font-size="49.68" text-anchor="middle" fill="#231f20">57.5 × 36.5</tspan></text>
+      <text id="E33_label" font-family="Arial, Helvetica, sans-serif"><tspan x="15146.375" y="2170.602" font-size="82.8" font-weight="bold" text-anchor="middle" fill="#231f20">E33</tspan><tspan x="15146.375" y="2230.218" font-size="49.68" text-anchor="middle" fill="#231f20">57.5 × 36.5</tspan></text>
+      <text id="E34_label" font-family="Arial, Helvetica, sans-serif"><tspan x="15562.175" y="2170.604" font-size="82.08" font-weight="bold" text-anchor="middle" fill="#231f20">E34</tspan><tspan x="15562.175" y="2229.701" font-size="49.248" text-anchor="middle" fill="#231f20">57 × 36.5</tspan></text>
+      <text id="E35_label" font-family="Arial, Helvetica, sans-serif"><tspan x="15882.575" y="2170.679" font-size="44.64" font-weight="bold" text-anchor="middle" fill="#231f20">E35</tspan><tspan x="15882.575" y="2202.82" font-size="26.784" text-anchor="middle" fill="#231f20">31 × 36.5</tspan></text>
     </g>
     <g id="Row_F_labels">
       <text id="F01_label" font-family="Arial, Helvetica, sans-serif"><tspan x="421.025" y="2344.418" font-size="25.056" font-weight="bold" text-anchor="middle" fill="#231f20">F01</tspan><tspan x="421.025" y="2362.458" font-size="15.034" text-anchor="middle" fill="#231f20">46.5 × 7.25</tspan></text>
@@ -1924,7 +1924,7 @@
       <text id="G28_label" font-family="Arial, Helvetica, sans-serif"><tspan x="12986.825" y="2624.181" font-size="93.6" font-weight="bold" text-anchor="middle" fill="#231f20">G28</tspan><tspan x="12986.825" y="2691.573" font-size="56.16" text-anchor="middle" fill="#231f20">65 × 70.5</tspan></text>
       <text id="G29_label" font-family="Arial, Helvetica, sans-serif"><tspan x="13429.625" y="2624.204" font-size="82.08" font-weight="bold" text-anchor="middle" fill="#231f20">G29</tspan><tspan x="13429.625" y="2683.301" font-size="49.248" text-anchor="middle" fill="#231f20">57 × 70.5</tspan></text>
       <text id="G30_label" font-family="Arial, Helvetica, sans-serif"><tspan x="13843.625" y="2624.204" font-size="82.08" font-weight="bold" text-anchor="middle" fill="#231f20">G30</tspan><tspan x="13843.625" y="2683.301" font-size="49.248" text-anchor="middle" fill="#231f20">57 × 70.5</tspan></text>
-      <text id="G31_label" font-family="Arial, Helvetica, sans-serif"><tspan x="14256.725" y="2594.785" font-size="81.72" font-weight="bold" text-anchor="middle" fill="#231f20">G31</tspan><tspan x="14256.725" y="2653.624" font-size="49.032" text-anchor="middle" fill="#231f20">56.75 × 70.5</tspan><tspan x="14256.725" y="2712.462" font-size="49.032" font-weight="bold" text-anchor="middle" fill="#ec0000">CHECK SIZE</tspan></text>
+      <text id="G31_label" font-family="Arial, Helvetica, sans-serif"><tspan x="14256.725" y="2624.205" font-size="81.72" font-weight="bold" text-anchor="middle" fill="#231f20">G31</tspan><tspan x="14256.725" y="2683.043" font-size="49.032" text-anchor="middle" fill="#231f20">56.75 × 70.5</tspan></text>
       <text id="G32_label" font-family="Arial, Helvetica, sans-serif"><tspan x="14668.925" y="2624.205" font-size="81.72" font-weight="bold" text-anchor="middle" fill="#231f20">G32</tspan><tspan x="14668.925" y="2683.043" font-size="49.032" text-anchor="middle" fill="#231f20">56.75 × 70.5</tspan></text>
       <text id="G33_label" font-family="Arial, Helvetica, sans-serif"><tspan x="15081.125" y="2624.205" font-size="81.72" font-weight="bold" text-anchor="middle" fill="#231f20">G33</tspan><tspan x="15081.125" y="2683.043" font-size="49.032" text-anchor="middle" fill="#231f20">56.75 × 70.5</tspan></text>
       <text id="G34_label" font-family="Arial, Helvetica, sans-serif"><tspan x="15494.225" y="2624.204" font-size="82.08" font-weight="bold" text-anchor="middle" fill="#231f20">G34</tspan><tspan x="15494.225" y="2683.301" font-size="49.248" text-anchor="middle" fill="#231f20">57 × 70.5</tspan></text>
@@ -2230,35 +2230,35 @@
   <g id="INFO">
     <g id="Row_and_column_keys">
       <text id="Row_A_key_left" font-family="Arial, Helvetica, sans-serif"><tspan x="135.575" y="416.344" font-size="72" font-weight="bold" text-anchor="end" fill="#231f20">A</tspan></text>
-      <text id="Row_A_key_right" font-family="Arial, Helvetica, sans-serif"><tspan x="16025.303" y="416.344" font-size="72" font-weight="bold" text-anchor="start" fill="#231f20">A</tspan></text>
+      <text id="Row_A_key_right" font-family="Arial, Helvetica, sans-serif"><tspan x="16067.675" y="416.344" font-size="72" font-weight="bold" text-anchor="start" fill="#231f20">A</tspan></text>
       <text id="Row_B_key_left" font-family="Arial, Helvetica, sans-serif"><tspan x="135.575" y="846.544" font-size="72" font-weight="bold" text-anchor="end" fill="#231f20">B</tspan></text>
-      <text id="Row_B_key_right" font-family="Arial, Helvetica, sans-serif"><tspan x="16025.303" y="846.544" font-size="72" font-weight="bold" text-anchor="start" fill="#231f20">B</tspan></text>
+      <text id="Row_B_key_right" font-family="Arial, Helvetica, sans-serif"><tspan x="16067.675" y="846.544" font-size="72" font-weight="bold" text-anchor="start" fill="#231f20">B</tspan></text>
       <text id="Row_C_key_left" font-family="Arial, Helvetica, sans-serif"><tspan x="135.575" y="1274.944" font-size="72" font-weight="bold" text-anchor="end" fill="#231f20">C</tspan></text>
-      <text id="Row_C_key_right" font-family="Arial, Helvetica, sans-serif"><tspan x="16025.303" y="1274.944" font-size="72" font-weight="bold" text-anchor="start" fill="#231f20">C</tspan></text>
+      <text id="Row_C_key_right" font-family="Arial, Helvetica, sans-serif"><tspan x="16067.675" y="1274.944" font-size="72" font-weight="bold" text-anchor="start" fill="#231f20">C</tspan></text>
       <text id="Row_D_key_left" font-family="Arial, Helvetica, sans-serif"><tspan x="135.575" y="1811.344" font-size="72" font-weight="bold" text-anchor="end" fill="#231f20">D</tspan></text>
-      <text id="Row_D_key_right" font-family="Arial, Helvetica, sans-serif"><tspan x="16025.303" y="1811.344" font-size="72" font-weight="bold" text-anchor="start" fill="#231f20">D</tspan></text>
+      <text id="Row_D_key_right" font-family="Arial, Helvetica, sans-serif"><tspan x="16067.675" y="1811.344" font-size="72" font-weight="bold" text-anchor="start" fill="#231f20">D</tspan></text>
       <text id="Row_E_key_left" font-family="Arial, Helvetica, sans-serif"><tspan x="135.575" y="2196.544" font-size="72" font-weight="bold" text-anchor="end" fill="#231f20">E</tspan></text>
-      <text id="Row_E_key_right" font-family="Arial, Helvetica, sans-serif"><tspan x="16025.303" y="2196.544" font-size="72" font-weight="bold" text-anchor="start" fill="#231f20">E</tspan></text>
+      <text id="Row_E_key_right" font-family="Arial, Helvetica, sans-serif"><tspan x="16067.675" y="2196.544" font-size="72" font-weight="bold" text-anchor="start" fill="#231f20">E</tspan></text>
       <text id="Row_F_key_left" font-family="Arial, Helvetica, sans-serif"><tspan x="135.575" y="2359.418" font-size="41.76" font-weight="bold" text-anchor="end" fill="#231f20">F</tspan></text>
-      <text id="Row_F_key_right" font-family="Arial, Helvetica, sans-serif"><tspan x="16025.303" y="2359.418" font-size="41.76" font-weight="bold" text-anchor="start" fill="#231f20">F</tspan></text>
+      <text id="Row_F_key_right" font-family="Arial, Helvetica, sans-serif"><tspan x="16067.675" y="2359.418" font-size="41.76" font-weight="bold" text-anchor="start" fill="#231f20">F</tspan></text>
       <text id="Row_G_key_left" font-family="Arial, Helvetica, sans-serif"><tspan x="135.575" y="2650.144" font-size="72" font-weight="bold" text-anchor="end" fill="#231f20">G</tspan></text>
-      <text id="Row_G_key_right" font-family="Arial, Helvetica, sans-serif"><tspan x="16025.303" y="2650.144" font-size="72" font-weight="bold" text-anchor="start" fill="#231f20">G</tspan></text>
+      <text id="Row_G_key_right" font-family="Arial, Helvetica, sans-serif"><tspan x="16067.675" y="2650.144" font-size="72" font-weight="bold" text-anchor="start" fill="#231f20">G</tspan></text>
       <text id="Row_H_key_left" font-family="Arial, Helvetica, sans-serif"><tspan x="135.575" y="3035.344" font-size="72" font-weight="bold" text-anchor="end" fill="#231f20">H</tspan></text>
-      <text id="Row_H_key_right" font-family="Arial, Helvetica, sans-serif"><tspan x="16025.303" y="3035.344" font-size="72" font-weight="bold" text-anchor="start" fill="#231f20">H</tspan></text>
+      <text id="Row_H_key_right" font-family="Arial, Helvetica, sans-serif"><tspan x="16067.675" y="3035.344" font-size="72" font-weight="bold" text-anchor="start" fill="#231f20">H</tspan></text>
       <text id="Row_I_key_left" font-family="Arial, Helvetica, sans-serif"><tspan x="135.575" y="3198.218" font-size="41.76" font-weight="bold" text-anchor="end" fill="#231f20">I</tspan></text>
-      <text id="Row_I_key_right" font-family="Arial, Helvetica, sans-serif"><tspan x="16025.303" y="3198.218" font-size="41.76" font-weight="bold" text-anchor="start" fill="#231f20">I</tspan></text>
+      <text id="Row_I_key_right" font-family="Arial, Helvetica, sans-serif"><tspan x="16067.675" y="3198.218" font-size="41.76" font-weight="bold" text-anchor="start" fill="#231f20">I</tspan></text>
       <text id="Row_J_key_left" font-family="Arial, Helvetica, sans-serif"><tspan x="135.575" y="3488.944" font-size="72" font-weight="bold" text-anchor="end" fill="#231f20">J</tspan></text>
-      <text id="Row_J_key_right" font-family="Arial, Helvetica, sans-serif"><tspan x="16025.303" y="3488.944" font-size="72" font-weight="bold" text-anchor="start" fill="#231f20">J</tspan></text>
+      <text id="Row_J_key_right" font-family="Arial, Helvetica, sans-serif"><tspan x="16067.675" y="3488.944" font-size="72" font-weight="bold" text-anchor="start" fill="#231f20">J</tspan></text>
       <text id="Row_K_key_left" font-family="Arial, Helvetica, sans-serif"><tspan x="135.575" y="3874.144" font-size="72" font-weight="bold" text-anchor="end" fill="#231f20">K</tspan></text>
-      <text id="Row_K_key_right" font-family="Arial, Helvetica, sans-serif"><tspan x="16025.303" y="3874.144" font-size="72" font-weight="bold" text-anchor="start" fill="#231f20">K</tspan></text>
+      <text id="Row_K_key_right" font-family="Arial, Helvetica, sans-serif"><tspan x="16067.675" y="3874.144" font-size="72" font-weight="bold" text-anchor="start" fill="#231f20">K</tspan></text>
       <text id="Row_L_key_left" font-family="Arial, Helvetica, sans-serif"><tspan x="135.575" y="4037.018" font-size="41.76" font-weight="bold" text-anchor="end" fill="#231f20">L</tspan></text>
-      <text id="Row_L_key_right" font-family="Arial, Helvetica, sans-serif"><tspan x="16025.303" y="4037.018" font-size="41.76" font-weight="bold" text-anchor="start" fill="#231f20">L</tspan></text>
+      <text id="Row_L_key_right" font-family="Arial, Helvetica, sans-serif"><tspan x="16067.675" y="4037.018" font-size="41.76" font-weight="bold" text-anchor="start" fill="#231f20">L</tspan></text>
       <text id="Row_M_key_left" font-family="Arial, Helvetica, sans-serif"><tspan x="135.575" y="4327.744" font-size="72" font-weight="bold" text-anchor="end" fill="#231f20">M</tspan></text>
-      <text id="Row_M_key_right" font-family="Arial, Helvetica, sans-serif"><tspan x="16025.303" y="4327.744" font-size="72" font-weight="bold" text-anchor="start" fill="#231f20">M</tspan></text>
+      <text id="Row_M_key_right" font-family="Arial, Helvetica, sans-serif"><tspan x="16067.675" y="4327.744" font-size="72" font-weight="bold" text-anchor="start" fill="#231f20">M</tspan></text>
       <text id="Row_N_key_left" font-family="Arial, Helvetica, sans-serif"><tspan x="135.575" y="4712.944" font-size="72" font-weight="bold" text-anchor="end" fill="#231f20">N</tspan></text>
-      <text id="Row_N_key_right" font-family="Arial, Helvetica, sans-serif"><tspan x="16025.303" y="4712.944" font-size="72" font-weight="bold" text-anchor="start" fill="#231f20">N</tspan></text>
+      <text id="Row_N_key_right" font-family="Arial, Helvetica, sans-serif"><tspan x="16067.675" y="4712.944" font-size="72" font-weight="bold" text-anchor="start" fill="#231f20">N</tspan></text>
       <text id="Row_O_key_left" font-family="Arial, Helvetica, sans-serif"><tspan x="135.575" y="4875.818" font-size="41.76" font-weight="bold" text-anchor="end" fill="#231f20">O</tspan></text>
-      <text id="Row_O_key_right" font-family="Arial, Helvetica, sans-serif"><tspan x="16025.303" y="4875.818" font-size="41.76" font-weight="bold" text-anchor="start" fill="#231f20">O</tspan></text>
+      <text id="Row_O_key_right" font-family="Arial, Helvetica, sans-serif"><tspan x="16067.675" y="4875.818" font-size="41.76" font-weight="bold" text-anchor="start" fill="#231f20">O</tspan></text>
       <text id="Column_1_key_top" font-family="Arial, Helvetica, sans-serif"><tspan x="302.675" y="106.368" font-size="48" font-weight="bold" text-anchor="middle" fill="#231f20">1</tspan></text>
       <text id="Column_2_key_top" font-family="Arial, Helvetica, sans-serif"><tspan x="673.475" y="106.368" font-size="48" font-weight="bold" text-anchor="middle" fill="#231f20">2</tspan></text>
       <text id="Column_3_key_top" font-family="Arial, Helvetica, sans-serif"><tspan x="1125.275" y="106.368" font-size="48" font-weight="bold" text-anchor="middle" fill="#231f20">3</tspan></text>
@@ -2331,29 +2331,29 @@
       <text id="Column_35_key_bottom" font-family="Arial, Helvetica, sans-serif"><tspan x="15707.075" y="4953.536" font-size="48" font-weight="bold" text-anchor="middle" fill="#231f20">35</tspan></text>
     </g>
     <g id="Title_block">
-      <text id="Title" font-family="Arial, Helvetica, sans-serif"><tspan x="159.575" y="5203.088" font-size="120" font-weight="bold" text-anchor="start" fill="#231f20">CRYPTO.COM ARENA - FIGUEROA ENTRANCE - WINDOW GRAPHICS TEMPLATE V2</tspan></text>
-      <text id="Notes" font-family="Arial, Helvetica, sans-serif"><tspan x="159.575" y="5335.832" font-size="54" text-anchor="start" fill="#231f20">SCALE 1:10 - everything in this file is 10% of actual size; output / RIP at 1000%. Sizes here and on the panels are actual inches, W × H.</tspan><tspan x="159.575" y="5400.632" font-size="54" text-anchor="start" fill="#231f20">Wall 2200.24&quot; W × 664&quot; H (183' 4-1/4&quot; × 55' 4&quot;)  |  525 glass panels: rows A-O (top to bottom) × columns 1-35 (left to right)  |  glass area 9,692 sq ft</tspan><tspan x="159.575" y="5465.432" font-size="54" text-anchor="start" fill="#231f20">Mullions: 0.5&quot; vertical, 2.25&quot; horizontal. Panel sizes are the glass sizes from Crypto.com Arena Figueroa Entrance - Windows (3).csv - field-verify before production.</tspan><tspan x="159.575" y="5530.232" font-size="54" text-anchor="start" fill="#231f20">No horizontal mullion between rows D-E, F-G-H, I-J-K, L-M-N: those panels butt together on the glass, so their seams will show.</tspan><tspan x="159.575" y="5595.032" font-size="54" text-anchor="start" fill="#231f20">Put all artwork on the ARTWORK layer and run it continuously behind the mullions and past the outer edges to the bleed. The other layers are locked, non-printing guides.</tspan><tspan x="159.575" y="5659.832" font-size="54" text-anchor="start" fill="#231f20">Bleed: 0.5&quot; per side (document bleed).  Safe area: keep text and logos 1&quot; inside the panel edges (dashed cyan line).</tspan><tspan x="159.575" y="5724.632" font-size="54" text-anchor="start" fill="#231f20">Output: artboard 1 = whole wall; artboards 2-526 = one per panel, named by panel ID. File &gt; Save a Copy &gt; Adobe PDF, Range 2-526, Marks and Bleeds &gt; Use Document Bleed Settings.</tspan><tspan x="159.575" y="5789.432" font-size="54" text-anchor="start" fill="#231f20">Images: 1000-1500 ppi at this scale (100-150 ppi at full size). Set Effect &gt; Document Raster Effects Settings to 1000 ppi or more before output.</tspan><tspan x="159.575" y="5854.232" font-size="54" text-anchor="start" fill="#231f20">Row widths vary from 2146.25&quot; to 2198.875&quot;, so each row is shifted sideways to line its vertical mullions up with the other rows as closely as the measurements allow.</tspan><tspan x="159.575" y="5919.032" font-size="54" text-anchor="start" fill="#231f20">CHECK BEFORE PRODUCTION: B28: 57&quot; wide, but column 28 is 67&quot; above and 67&quot; below (typo?); E28: 57&quot; wide, but column 28 is 66&quot; above and 66&quot; below (typo?); G31: blank in the spreadsheet - drawn at 56.75&quot; x 70.5&quot; from the previous version of the sheet.</tspan></text>
-      <rect id="Legend_1" x="159.575" y="6029.032" width="108" height="54" fill="#4f4c4d"/>
-      <text id="Legend_1_text" font-family="Arial, Helvetica, sans-serif"><tspan x="297.575" y="6075.364" font-size="54" text-anchor="start" fill="#231f20">Mullion</tspan></text>
-      <rect id="Legend_2" x="2759.575" y="6029.032" width="108" height="54" fill="none" stroke="#ec008c" stroke-width="3"/>
-      <text id="Legend_2_text" font-family="Arial, Helvetica, sans-serif"><tspan x="2897.575" y="6075.364" font-size="54" text-anchor="start" fill="#231f20">Trim line = glass edge (panel size)</tspan></text>
-      <rect id="Legend_3" x="5359.575" y="6029.032" width="108" height="54" fill="none" stroke="#00aeef" stroke-width="3" stroke-dasharray="12 8"/>
-      <text id="Legend_3_text" font-family="Arial, Helvetica, sans-serif"><tspan x="5497.575" y="6075.364" font-size="54" text-anchor="start" fill="#231f20">Safe area</tspan></text>
-      <rect id="Legend_4" x="7959.575" y="6029.032" width="108" height="54" fill="none" stroke="#ec0000" stroke-width="3"/>
-      <text id="Legend_4_text" font-family="Arial, Helvetica, sans-serif"><tspan x="8097.575" y="6075.364" font-size="54" text-anchor="start" fill="#231f20">Bleed (Illustrator draws it around each artboard)</tspan></text>
-      <text id="Scale_bar_title" font-family="Arial, Helvetica, sans-serif"><tspan x="159.575" y="6243.032" font-size="54" font-weight="bold" text-anchor="start" fill="#231f20">SCALE 1:10 (5 ft divisions)</tspan></text>
-      <rect id="Scale_bar_1" x="159.575" y="6273.032" width="432" height="36" fill="#231f20" stroke="#231f20" stroke-width="2"/>
-      <rect id="Scale_bar_2" x="591.575" y="6273.032" width="432" height="36" fill="none" stroke="#231f20" stroke-width="2"/>
-      <rect id="Scale_bar_3" x="1023.575" y="6273.032" width="432" height="36" fill="#231f20" stroke="#231f20" stroke-width="2"/>
-      <rect id="Scale_bar_4" x="1455.575" y="6273.032" width="432" height="36" fill="none" stroke="#231f20" stroke-width="2"/>
-      <text id="Scale_bar_0_ft" font-family="Arial, Helvetica, sans-serif"><tspan x="159.575" y="6357.672" font-size="40" text-anchor="middle" fill="#231f20">0</tspan></text>
-      <text id="Scale_bar_5_ft" font-family="Arial, Helvetica, sans-serif"><tspan x="591.575" y="6357.672" font-size="40" text-anchor="middle" fill="#231f20">5'</tspan></text>
-      <text id="Scale_bar_10_ft" font-family="Arial, Helvetica, sans-serif"><tspan x="1023.575" y="6357.672" font-size="40" text-anchor="middle" fill="#231f20">10'</tspan></text>
-      <text id="Scale_bar_15_ft" font-family="Arial, Helvetica, sans-serif"><tspan x="1455.575" y="6357.672" font-size="40" text-anchor="middle" fill="#231f20">15'</tspan></text>
-      <text id="Scale_bar_20_ft" font-family="Arial, Helvetica, sans-serif"><tspan x="1887.575" y="6357.672" font-size="40" text-anchor="middle" fill="#231f20">20'</tspan></text>
+      <text id="Title" font-family="Arial, Helvetica, sans-serif"><tspan x="159.575" y="5203.088" font-size="120" font-weight="bold" text-anchor="start" fill="#231f20">CRYPTO.COM ARENA - FIGUEROA ENTRANCE - WINDOW GRAPHICS TEMPLATE V3</tspan></text>
+      <text id="Notes" font-family="Arial, Helvetica, sans-serif"><tspan x="159.575" y="5335.832" font-size="54" text-anchor="start" fill="#231f20">SCALE 1:10 - everything in this file is 10% of actual size; output / RIP at 1000%. Sizes here and on the panels are actual inches, W × H.</tspan><tspan x="159.575" y="5400.632" font-size="54" text-anchor="start" fill="#231f20">Wall 2206.125&quot; W × 664&quot; H (183' 10-1/8&quot; × 55' 4&quot;)  |  525 glass panels: rows A-O (top to bottom) × columns 1-35 (left to right)  |  glass area 9,697 sq ft</tspan><tspan x="159.575" y="5465.432" font-size="54" text-anchor="start" fill="#231f20">Mullions: 0.5&quot; vertical, 2.25&quot; horizontal. Panel sizes are the glass sizes from Crypto.com Arena Figueroa Entrance - Windows (3).csv - field-verify before production.</tspan><tspan x="159.575" y="5530.232" font-size="54" text-anchor="start" fill="#231f20">No horizontal mullion between rows D-E, F-G-H, I-J-K, L-M-N: those panels butt together on the glass, so their seams will show.</tspan><tspan x="159.575" y="5595.032" font-size="54" text-anchor="start" fill="#231f20">Put all artwork on the ARTWORK layer and run it continuously behind the mullions and past the outer edges to the bleed. The other layers are locked, non-printing guides.</tspan><tspan x="159.575" y="5659.832" font-size="54" text-anchor="start" fill="#231f20">Bleed: 0.5&quot; per side (document bleed).  Safe area: keep text and logos 1&quot; inside the panel edges (dashed cyan line).</tspan><tspan x="159.575" y="5724.632" font-size="54" text-anchor="start" fill="#231f20">Output: artboard 1 = whole wall; artboards 2-526 = one per panel, named by panel ID. File &gt; Save a Copy &gt; Adobe PDF, Range 2-526, Marks and Bleeds &gt; Use Document Bleed Settings.</tspan><tspan x="159.575" y="5789.432" font-size="54" text-anchor="start" fill="#231f20">Images: 1000-1500 ppi at this scale (100-150 ppi at full size). Set Effect &gt; Document Raster Effects Settings to 1000 ppi or more before output.</tspan><tspan x="159.575" y="5854.232" font-size="54" text-anchor="start" fill="#231f20">Row widths vary from 2146.25&quot; to 2205.125&quot;, so each row is shifted sideways to line its vertical mullions up with the other rows as closely as the measurements allow.</tspan></text>
+      <rect id="Legend_1" x="159.575" y="5964.232" width="108" height="54" fill="#4f4c4d"/>
+      <text id="Legend_1_text" font-family="Arial, Helvetica, sans-serif"><tspan x="297.575" y="6010.564" font-size="54" text-anchor="start" fill="#231f20">Mullion</tspan></text>
+      <rect id="Legend_2" x="2759.575" y="5964.232" width="108" height="54" fill="none" stroke="#ec008c" stroke-width="3"/>
+      <text id="Legend_2_text" font-family="Arial, Helvetica, sans-serif"><tspan x="2897.575" y="6010.564" font-size="54" text-anchor="start" fill="#231f20">Trim line = glass edge (panel size)</tspan></text>
+      <rect id="Legend_3" x="5359.575" y="5964.232" width="108" height="54" fill="none" stroke="#00aeef" stroke-width="3" stroke-dasharray="12 8"/>
+      <text id="Legend_3_text" font-family="Arial, Helvetica, sans-serif"><tspan x="5497.575" y="6010.564" font-size="54" text-anchor="start" fill="#231f20">Safe area</tspan></text>
+      <rect id="Legend_4" x="7959.575" y="5964.232" width="108" height="54" fill="none" stroke="#ec0000" stroke-width="3"/>
+      <text id="Legend_4_text" font-family="Arial, Helvetica, sans-serif"><tspan x="8097.575" y="6010.564" font-size="54" text-anchor="start" fill="#231f20">Bleed (Illustrator draws it around each artboard)</tspan></text>
+      <text id="Scale_bar_title" font-family="Arial, Helvetica, sans-serif"><tspan x="159.575" y="6178.232" font-size="54" font-weight="bold" text-anchor="start" fill="#231f20">SCALE 1:10 (5 ft divisions)</tspan></text>
+      <rect id="Scale_bar_1" x="159.575" y="6208.232" width="432" height="36" fill="#231f20" stroke="#231f20" stroke-width="2"/>
+      <rect id="Scale_bar_2" x="591.575" y="6208.232" width="432" height="36" fill="none" stroke="#231f20" stroke-width="2"/>
+      <rect id="Scale_bar_3" x="1023.575" y="6208.232" width="432" height="36" fill="#231f20" stroke="#231f20" stroke-width="2"/>
+      <rect id="Scale_bar_4" x="1455.575" y="6208.232" width="432" height="36" fill="none" stroke="#231f20" stroke-width="2"/>
+      <text id="Scale_bar_0_ft" font-family="Arial, Helvetica, sans-serif"><tspan x="159.575" y="6292.872" font-size="40" text-anchor="middle" fill="#231f20">0</tspan></text>
+      <text id="Scale_bar_5_ft" font-family="Arial, Helvetica, sans-serif"><tspan x="591.575" y="6292.872" font-size="40" text-anchor="middle" fill="#231f20">5'</tspan></text>
+      <text id="Scale_bar_10_ft" font-family="Arial, Helvetica, sans-serif"><tspan x="1023.575" y="6292.872" font-size="40" text-anchor="middle" fill="#231f20">10'</tspan></text>
+      <text id="Scale_bar_15_ft" font-family="Arial, Helvetica, sans-serif"><tspan x="1455.575" y="6292.872" font-size="40" text-anchor="middle" fill="#231f20">15'</tspan></text>
+      <text id="Scale_bar_20_ft" font-family="Arial, Helvetica, sans-serif"><tspan x="1887.575" y="6292.872" font-size="40" text-anchor="middle" fill="#231f20">20'</tspan></text>
     </g>
   </g>
   <g id="BLEED">
-    <rect id="Bleed_line" x="155.975" y="118.768" width="15848.928" height="4788" fill="none" stroke="#ed1c24" stroke-width="1"/>
+    <rect id="Bleed_line" x="155.975" y="118.768" width="15891.3" height="4788" fill="none" stroke="#ed1c24" stroke-width="1"/>
   </g>
 </svg>

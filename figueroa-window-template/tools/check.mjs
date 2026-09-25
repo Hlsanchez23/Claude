@@ -86,13 +86,29 @@ check('DATA block matches the spreadsheet, with fill-ins flagged in NOTES', () =
   assert.equal(source, expected, 'run node tools/build.mjs');
 });
 
-check('a blank size in the spreadsheet stops the build unless it is filled in (and flagged)', () => {
-  assert.deepEqual(measured.blanks.map((b) => b.id), ['G31']);
-  assert.throws(() => applyFillIns(measured, {}), /Blank panel sizes in the spreadsheet: G31/);
-  const rowG = measured.wall.filter((e) => e !== MULLION_MARK)[6][1];
+check('the spreadsheet has no blank sizes, and the corrected cells read B28 67, E28 66, G31 56.75', () => {
+  assert.deepEqual(measured.blanks, []);
+  const rows = measured.wall.filter((e) => e !== MULLION_MARK);
+  assert.deepEqual([rows[1][1][27], rows[1][0]], [67, 40.5]);
+  assert.deepEqual([rows[4][1][27], rows[4][0]], [66, 36.5]);
+  assert.deepEqual([rows[6][1][30], rows[6][0]], [56.75, 70.5]);
+});
+
+check('a blank size stops the build unless it is filled in, and a fill-in is flagged', () => {
+  // blank out G31 in a copy of the spreadsheet
+  const lines = fs.readFileSync(findSpreadsheet(), 'utf8').split('\r\n');
+  const cells = lines[11].split(',');
+  cells[60] = ' ';
+  lines[11] = cells.join(',');
+  const broken = readMeasurements(lines.join('\r\n'));
+  assert.deepEqual(broken.blanks.map((b) => b.id), ['G31']);
+  const rowG = broken.wall.filter((e) => e !== MULLION_MARK)[6][1];
   assert.equal(rowG.length, 35, 'the columns after the blank keep their places');
-  assert.equal(rowG[30], null);
   assert.equal(rowG[31], 56.75);
+  assert.throws(() => applyFillIns(broken, {}), /Blank panel sizes in the spreadsheet: G31/);
+  const filled = applyFillIns(broken, { G31: { w: 56.75, h: 70.5, note: 'stand-in' } });
+  assert.deepEqual(filled.notes, { G31: 'stand-in' });
+  assert.deepEqual(filled.wall, applyFillIns(measured, {}).wall);
 });
 
 // ---- the default build ----------------------------------------------------
@@ -102,20 +118,19 @@ const { doc, state, layout: L, settings: S, api } = out;
 const K = 72 / S.scale;
 const WALL = plain(api.WALL);
 const ROWS = plain(api.ROWS);
-const FLAGGED = ['B28', 'E28', 'G31'];
 
 check('builds without errors and reports once', () => {
   assert.equal(state.documents.length, 1);
   assert.equal(state.alerts.length, 1);
   assert.match(state.alerts[0], /^Window graphics template ready/);
   assert.match(state.alerts[0], /525 panels in 15 rows, 526 artboards/);
-  FLAGGED.forEach((id) => assert.match(state.alerts[0], new RegExp(`Check ${id}: `)));
+  assert.doesNotMatch(state.alerts[0], /Notes:/);
 });
 
-check('document: CMYK, inches, 1:10 size, 0.5 in bleed (0.05 in at scale), v2 title', () => {
+check('document: CMYK, inches, 1:10 size, 0.5 in bleed (0.05 in at scale), v3 title', () => {
   assert.equal(doc.colorMode, 'DocumentColorSpace.CMYK');
   assert.equal(doc.units, 'RulerUnits.Inches');
-  assert.match(doc.title, / v2 1-10$/);
+  assert.match(doc.title, / v3 1-10$/);
   close(doc.width, L.width * K, 'width');
   close(doc.height, L.height * K, 'height');
   close(L.height, 646 + 8 * 2.25, 'wall height = glass + 8 horizontal mullions');
@@ -168,7 +183,9 @@ check('TRIM: one outline per panel at the exact spreadsheet size', () => {
     assert.equal(p.item.filled, false, `${id} has a fill`);
     assert.equal(p.item.stroked, true, `${id} has no stroke`);
   }));
-  close(byId.get('G31').w, 56.75 * K, 'G31 uses the fill-in width');
+  close(byId.get('B28').w, 67 * K, 'B28 corrected width');
+  close(byId.get('E28').w, 66 * K, 'E28 corrected width');
+  close(byId.get('G31').w, 56.75 * K, 'G31 width');
 });
 
 check('panels in a row: same top, 0.5 in vertical mullion between neighbours', () => {
@@ -256,20 +273,16 @@ check('SAFE AREA: dashed outline 1 in inside every panel', () => {
   }
 });
 
-check('LABELS: ID and size inside each panel; a red CHECK SIZE line on B28, E28 and G31', () => {
+check('LABELS: ID and size centered inside each panel', () => {
   const labels = textsOf(doc, 'LABELS');
   assert.equal(labels.length, 525);
   const [ox, oy] = doc.artboards[0].rect;
-  const checkSpot = doc.spots.find((s) => s.name === 'Template - Check');
   for (const t of labels) {
     const id = t.name.replace(' label', '');
     const p = byId.get(id);
     const [r, c] = [LETTERS.indexOf(id[0]), Number(id.slice(1)) - 1];
     const [h, widths] = ROWS[r];
-    const expected = [id, `${widths[c]} ${TIMES} ${h}`];
-    if (FLAGGED.includes(id)) expected.push('CHECK SIZE');
-    assert.deepEqual(t.paragraphs.map((q) => q.text), expected);
-    if (FLAGGED.includes(id)) assert.equal(t.paragraphs[2].fillColor.spot, checkSpot, `${id} CHECK line is not red`);
+    assert.deepEqual(t.paragraphs.map((q) => q.text), [id, `${widths[c]} ${TIMES} ${h}`]);
     assert.ok(t.paragraphs.every((q) => q.justification === 'Justification.CENTER'));
     const [bl, bt, br, bb] = itemBounds(t);
     const box = { x0: bl - ox, x1: br - ox, y0: oy - bt, y1: oy - bb };
@@ -300,16 +313,13 @@ check('everything sits on the Illustrator canvas', () => {
   assert.deepEqual(offCanvas(doc), []);
 });
 
-check('title block: v2 title, butted rows, and the panels to check', () => {
+check('title block: v3 title, butted rows, nothing left to check', () => {
   const info = textsOf(doc, 'INFO');
-  assert.match(info.find((t) => t.name === 'Title').paragraphs[0].text, /WINDOW GRAPHICS TEMPLATE V2$/);
+  assert.match(info.find((t) => t.name === 'Title').paragraphs[0].text, /WINDOW GRAPHICS TEMPLATE V3$/);
   const lines = info.find((t) => t.name === 'Notes').paragraphs.map((q) => q.text);
   assert.ok(lines.includes('No horizontal mullion between rows D-E, F-G-H, I-J-K, L-M-N: ' +
     'those panels butt together on the glass, so their seams will show.'));
-  const last = lines.at(-1);
-  assert.match(last, /^CHECK BEFORE PRODUCTION: /);
-  FLAGGED.forEach((id) => assert.match(last, new RegExp(`${id}: `)));
-  assert.match(last, /G31: blank in the spreadsheet/);
+  assert.ok(!lines.some((l) => l.startsWith('CHECK')), 'unexpected CHECK line');
 });
 
 check('row offsets are the least-squares fit of the vertical mullions (the pivot mullion stays within 3 in)', () => {
@@ -367,6 +377,26 @@ check('rowAlignment left / center / right', () => {
   }
 });
 
+check('a width typo and a NOTES entry are flagged: red CHECK SIZE label, title block, alert', () => {
+  let src = source.replace(/(\[40\.5, \[(?:[\d.]+, ){27})67,/, '$157,');   // B28 back to 57
+  assert.notEqual(src, source, 'could not put the B28 typo back');
+  src = src.replace('var NOTES = {};', "var NOTES = {\n        G31: 'test note'\n    };");
+  const { doc: d, state: s } = build(src);
+  const labels = new Map(textsOf(d, 'LABELS').map((t) => [t.name.replace(' label', ''), t]));
+  const red = d.spots.find((q) => q.name === 'Template - Check');
+  for (const id of ['B28', 'G31']) {
+    const t = labels.get(id);
+    assert.equal(t.paragraphs.length, 3, `${id} has no CHECK line`);
+    assert.equal(t.paragraphs[2].text, 'CHECK SIZE');
+    assert.equal(t.paragraphs[2].fillColor.spot, red, `${id} CHECK line is not red`);
+  }
+  assert.equal(labels.get('B27').paragraphs.length, 2);
+  const notes = textsOf(d, 'INFO').find((t) => t.name === 'Notes').paragraphs.map((q) => q.text);
+  assert.equal(notes.at(-1), 'CHECK BEFORE PRODUCTION: B28: 57" wide, but column 28 is 67" above and 67" below (typo?); G31: test note.');
+  assert.match(s.alerts[0], /Check B28: 57" wide/);
+  assert.match(s.alerts[0], /Check G31: test note\./);
+});
+
 check('panelArtboards: false makes a single artboard', () => {
   const d = build(withSetting(source, 'panelArtboards', 'false')).doc;
   assert.equal(d.artboards.length, 1);
@@ -411,7 +441,7 @@ check('panel schedule: 525 panels, sizes, bleed sizes and checks', () => {
     assert.equal(Number(ab), L.panels.indexOf(p) + 2);
   }
   const flagged = lines.filter((l) => !l.endsWith(',')).map((l) => l.split(',')[0]);
-  assert.deepEqual(flagged, ['B28', 'C34', 'D01', 'E28', 'G31', 'J02']);
+  assert.deepEqual(flagged, ['C34', 'D01', 'J02'], 'only the 1/8 in precision notes remain');
 });
 
 console.log(failures ? `\n${failures} check(s) failed` : '\nall checks passed');

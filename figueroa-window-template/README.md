@@ -1,33 +1,34 @@
-# Crypto.com Arena – Figueroa Entrance · Window Graphics Template (v2)
+# Crypto.com Arena – Figueroa Entrance · Window Graphics Template (v3)
 
 Editable Adobe Illustrator template for large-format window graphics, built from
 [`Crypto.com Arena Figueroa Entrance - Windows (3).csv`](../Crypto.com%20Arena%20Figueroa%20Entrance%20-%20Windows%20%283%29.csv):
 525 glass panels (15 rows × 35 columns), 0.5" vertical mullions, and 2.25" horizontal
 mullions where the revised spreadsheet has them.
 
-## What changed in v2
+## Revisions
 
-- **Horizontal mullions follow the revised spreadsheet.** There are 8 instead of 15: between
-  rows A/B, B/C, C/D, E/F, H/I, K/L and N/O, and below O. Rows **D-E, F-G-H, I-J-K and
-  L-M-N butt together** with no gap, so the wall is now 664" tall (was 679.75").
-- **G31 is blank in the revised spreadsheet.** It's drawn at 56.75" × 70.5", its size in
-  the previous sheet (the same as G32 and G33), and flagged to confirm.
-- Panels to verify get a red **CHECK SIZE** line on their label.
-- The files are named `-v2`. The v1 files are in the git history.
+- **v3:** **B28** is corrected to 67" × 40.5" and **E28** to 66" × 36.5" (both were 57"
+  typos), and **G31** is 56.75" × 70.5" (it was blank), as confirmed. The spreadsheet in
+  the repo is corrected to match, so nothing on the template is flagged any more.
+- **v2:** the horizontal mullions follow the revised spreadsheet. There are 8 instead of 15:
+  between rows A/B, B/C, C/D, E/F, H/I, K/L and N/O, and below O. Rows **D-E, F-G-H, I-J-K
+  and L-M-N butt together** with no gap, so the wall is 664" tall (was 679.75"). Panels to
+  verify get a red **CHECK SIZE** line on their label.
+- Each revision's files carry its number (`-v3`). Earlier versions are in the git history.
 
 ![Template preview](preview.png)
 
 | File | What it is |
 |---|---|
-| **`Figueroa-Windows-Template-v2.jsx`** | Illustrator script that builds the full layered template. **Use this one.** |
-| `Figueroa-Windows-Template-v2-1to10.svg` | The same drawing as a file Illustrator opens directly (no layers or per-panel artboards) |
-| `Figueroa-Windows-Panel-Schedule-v2.csv` | All 525 panels: ID, size, size + bleed, sq ft, artboard #, position, verification flags |
+| **`Figueroa-Windows-Template-v3.jsx`** | Illustrator script that builds the full layered template. **Use this one.** |
+| `Figueroa-Windows-Template-v3-1to10.svg` | The same drawing as a file Illustrator opens directly (no layers or per-panel artboards) |
+| `Figueroa-Windows-Panel-Schedule-v3.csv` | All 525 panels: ID, size, size + bleed, sq ft, artboard #, position, verification flags |
 | `preview.png`, `preview-detail.png` | Previews |
 | `tools/` | Rebuild from the spreadsheet and verify (Node.js; not needed to use the template) |
 
 ## Build the template in Illustrator
 
-1. **File › Scripts › Other Script…** (Ctrl/Cmd+F12) and choose `Figueroa-Windows-Template-v2.jsx`.
+1. **File › Scripts › Other Script…** (Ctrl/Cmd+F12) and choose `Figueroa-Windows-Template-v3.jsx`.
 2. Give it a minute or two: it draws about 2,300 objects and 526 artboards.
 3. **File › Save As › Adobe Illustrator (.ai).**
 
@@ -37,7 +38,7 @@ elevation only.
 ## What's in the document
 
 - **Scale 1:10.** Everything is 10% of actual size, so output/RIP at **1000%**. The wall is
-  2200.24" × 664" actual (183' 4-1/4" × 55' 4"), which is 220.02" × 66.4" in the file.
+  2206.125" × 664" actual (183' 10-1/8" × 55' 4"), which is 220.61" × 66.4" in the file.
   At full size it would exceed Illustrator's 227" canvas.
 - **CMYK**, ruler units in inches.
 - **Artboard 1, "Elevation":** the whole wall. Design here.
@@ -82,17 +83,24 @@ output.
 
 ## How the rows are laid out
 
-The rows are not all the same width: 2198.875" at the top (row A) and 2146.25" at the bottom
-(row O). Each column gets 1.5–4.25" narrower from the top row to the bottom row. If every row
+The rows are not all the same width: they range from 2146.25" (row O, at the bottom) to
+2205.125" (row B). Each column gets 1.5–4.25" narrower from the top row to the bottom row. If every row
 started at the same x, the vertical mullions would zig-zag. So the script shifts each row
 sideways to line its vertical mullions up with the other rows as closely as the measurements
 allow (a least-squares fit).
 
-The result is a fan. The mullion after column 17 moves by less than 4" over the full
-height, and the mullions move inward toward the bottom by up to 51–58" at the ends. That suggests the real
+The result is a fan. The mullion after column 17 moves by about 2" over the full height,
+and the mullions move inward toward the bottom by up to 51–58" at the ends. That suggests the real
 wall curves or leans and the glass is slightly trapezoidal. Each panel is still drawn as a
 rectangle at its measured size. To align rows differently, set `rowAlignment` in the
 script's SETTINGS to `'left'`, `'center'` or `'right'`.
+
+The biggest sideways steps are where a 7.25" strip meets the 70.5" row below it. Strips F,
+I and L add up 11–18" wider across columns 2–34 than rows G, J and M. The panels in a
+column share the same vertical mullions, so those rows should measure nearly the same. At
+the right end of the L/M seam the rows end up offset by up to 11". Artwork that crosses
+those seams near the ends may not line up on the glass, so field-check a strip width if
+it matters.
 
 Other choices, each a one-line setting at the top of the script:
 
@@ -109,14 +117,12 @@ Other choices, each a one-line setting at the top of the script:
 
 ## Check before production
 
-The script also flags these in the title block, the completion message and the schedule's
-**Check** column.
+B28, E28 and G31 were corrected in v3. Three sizes are still used as given and noted in
+the schedule's **Check** column. Any future typo-like jumps or blank sizes get flagged in
+the title block, the completion message and on the panel itself.
 
 | Panel | Spreadsheet | Why |
 |---|---|---|
-| **G31** | blank | The cell is empty in `Windows (3).csv`. It was 56.75" × 70.5" in the previous sheet, like G32 and G33, so it's drawn at that size. Confirm it. |
-| **B28** | 57" × 40.5" | Column 28 is 67" in the rows above and below. The block of 57" panels starts one column early in this row. Likely a typo for 67". |
-| **E28** | 57" × 36.5" | Same pattern: column 28 is 66" above and below. With 66", row E's total width fits between its neighbours. |
 | D01 | 45.24" | Probably 45.25" (not a 1/8" increment) |
 | C34 | 58.24" | Probably 58.25" |
 | J02 | 59.755" | Probably 59.75" |
@@ -132,8 +138,8 @@ read as W × H.
   rewrites the DATA block in the script and regenerates the SVG and schedule. Or edit the
   number directly in the script's DATA block and re-run it in Illustrator.
 - **Blank cells** in the spreadsheet stop the build, rather than shifting the columns after
-  them. Until the sheet is fixed, a stand-in size goes in `FILL_INS` in `tools/build.mjs`
-  (G31 is there now), and the template flags it.
+  them. Until the sheet is fixed, a stand-in size goes in `FILL_INS` in `tools/build.mjs`,
+  and the template flags it.
 
 ## Using the SVG instead
 
